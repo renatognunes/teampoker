@@ -1,0 +1,28 @@
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(34, 34, 34);
+  padding: 2rem 3.6rem;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 240px;
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-bar a {
+  display: block;
+  padding-left: 2.8rem;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+}
