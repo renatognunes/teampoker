@@ -34,6 +34,18 @@
 .backgroundWrapper {
   background: linear-gradient(340deg, #131f30 0%, #131a25 74%);
   transition: none !important;
+  opacity: 0.54;
+  // opacity: 0.7;
+  z-index: 0;
+  position: absolute;
+  height: 550px;
+  width: 100%;
+}
+
+.backgroundWrapperBack {
+  background: linear-gradient(340deg, #131f30 0%, #131a25 74%);
+  transition: none !important;
+  opacity: 1;
   // opacity: 0.7;
   z-index: -2;
   position: absolute;

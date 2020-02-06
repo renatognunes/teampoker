@@ -55,9 +55,9 @@
 
 .headline h1 {
   color: white;
-  // -webkit-text-stroke: 0.2rem white;
-  font-size: 6rem;
-  letter-spacing: 0.08rem;
+  -webkit-text-stroke: 0.3rem white;
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
   // text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -66,7 +66,11 @@
   // background-position-y: 10%;
   // background-blend-mode: multiply;
   padding-bottom: 4px;
-  text-shadow: 0px 0px 3px #0000007e;
+  text-shadow: 0px 3px 0px #00d2ff;
+  // .team {
+  //   color: transparent;
+  //   -webkit-text-stroke: 0.2rem white;
+  // }
 }
 
 .headline p {
@@ -84,11 +88,13 @@
   padding: 15px 40px;
   font-size: 2rem;
   color: white;
-  border: 1px solid #36c7e7;
+  border: 2px solid #ffffff;
   cursor: pointer;
-  // background-color: transparent;
-  background-image: linear-gradient(to right, #00d2ff 0%, #088aa7 100%);
-  border-radius: 5px;
+  // background-color: white;
+  // background-position-x: 100%;
+  background-image: linear-gradient(to right, #00d2ff);
+  // box-shadow: 4px 4px 0px #00d2ff;
+  border-radius: 4px;
 
   &:hover {
     background-position: left center;

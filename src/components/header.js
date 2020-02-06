@@ -18,6 +18,8 @@ const Header = () => {
 
   return (
     <div className={layoutStyles.headerWrapper}>
+      <div className={layoutStyles.backgroundWrapperBack} />
+
       <div className={layoutStyles.backgroundWrapper} />
       <BackgroundSlider
         query={useStaticQuery(graphql`
@@ -52,7 +54,7 @@ const Header = () => {
           // background: "blue",
           backgroundPosition: "top",
           // top: 0,
-          zIndex: 0,
+          zIndex: -1,
           // transform: "rotate(-2deg) scale(.9)",
         }}
       ></BackgroundSlider>

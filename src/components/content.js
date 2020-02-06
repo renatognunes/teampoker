@@ -23,7 +23,10 @@ const content = () => {
     <div className={contentStyles.container}>
       <div>
         <div className={contentStyles.headline}>
-          <h1>We make poker a Team Sport</h1>
+          <h1>
+            WE MAKE POKER A{" "}
+            <span className={contentStyles.team}>TEAM SPORT</span>
+          </h1>
           <p>
             Team Poker® patented system allows both Individuals and Teams to
             play and compete in poker tournaments for a percentage of the prize
