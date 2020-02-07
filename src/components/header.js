@@ -42,7 +42,7 @@ const Header = () => {
         transition={2} // transition duration between images
         duration={4} // how long an image is shown
         // specify images to include (and their order) according to `relativePath`
-        images={["cover06.jpg", "cover04.jpg", "cover11.jpg", "cover09.jpg"]}
+        images={["foto.jpg", "foto3.jpg", "foto4.jpg"]}
         // pass down standard element props
         style={{
           maxHeight: "550px",
