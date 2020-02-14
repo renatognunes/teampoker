@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  height: 560px;
+  height: 500px;
   justify-content: center;
   align-items: center;
   // background: black;
@@ -15,7 +15,7 @@
 // }
 
 .container > div {
-  margin-bottom: 120px;
+  // margin-bottom: 0px;
   // margin-top: 0px;
   // border: 1px solid red;
   flex: 1;
@@ -75,11 +75,12 @@
 
 .headline p {
   display: inline-block;
-  padding: 0 5rem;
+  padding: 0 2rem;
+  text-align: left;
   // padding: 0 2rem;
   text-shadow: 0px 0px 2px black;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -94,7 +95,7 @@
   // background-position-x: 100%;
   background-image: linear-gradient(to right, #00d2ff);
   // box-shadow: 4px 4px 0px #00d2ff;
-  border-radius: 4px;
+  border-radius: 1px;
 
   &:hover {
     background-position: left center;

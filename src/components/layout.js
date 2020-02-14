@@ -3,6 +3,7 @@ import React from "react"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Services from "./Services"
 import "normalize.css"
 import "../styles/global.scss"
 
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <Services />
     </>
     //       <Header />
     //       <div
