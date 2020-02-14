@@ -28,12 +28,12 @@ const content = () => {
             <span className={contentStyles.team}>TEAM SPORT</span>
           </h1>
           <p>
-            - The patented system allows both Individuals and Teams to compete
+            • The patented system allows both Individuals and Teams to compete
             in poker tournaments.
             <br />
-            - Our Poker Sports Model includes options for Collusion Free Seating
+            • Our Poker Sports Model includes options for Collusion Free Seating
             Protocol.
-            <br /> - Any Size Team is possible in the same tournament with the
+            <br /> • Any Size Team is possible in the same tournament with the
             Team Poker® Handicapping System.
           </p>
           <button className={contentStyles.button}>How it works</button>

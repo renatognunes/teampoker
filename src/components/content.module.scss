@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  height: 500px;
+  height: 450px;
   justify-content: center;
   align-items: center;
+
   // background: black;
   // z-index: -10;
   // margin-bottom: 200px;
@@ -76,11 +77,13 @@
 .headline p {
   display: inline-block;
   padding: 0 2rem;
+  font-family: "Roboto", sans-serif;
   text-align: left;
   // padding: 0 2rem;
   text-shadow: 0px 0px 2px black;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   font-weight: 400;
 }
 
@@ -93,7 +96,7 @@
   cursor: pointer;
   // background-color: white;
   // background-position-x: 100%;
-  background-image: linear-gradient(to right, #00d2ff);
+  background: #00d2ff;
   // box-shadow: 4px 4px 0px #00d2ff;
   border-radius: 1px;
 

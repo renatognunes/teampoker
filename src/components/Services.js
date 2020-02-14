@@ -25,7 +25,7 @@ const Services = () => {
           }
         }
       }
-      image2: file(relativePath: { eq: "services3.jpeg" }) {
+      image2: file(relativePath: { eq: "services4.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 540) {
             ...GatsbyImageSharpFluid
@@ -43,68 +43,85 @@ const Services = () => {
   `)
 
   return (
-    <div>
-      <div className={ServicesStyles.header}>
-        <h1>Services</h1>
-      </div>
-      <div className={ServicesStyles.container}>
-        {/* <div> */}
-        <div>
-          <h1>POKER ROOM SOFTWARE</h1>
-          <div>
-            <Img
-              objectFit="cover"
-              imgStyle={{ objectFit: "contain" }}
-              fluid={data.image1.childImageSharp.fluid}
-              alt=""
-            />
-          </div>
-          <p>
-            TeamPoker®{" "}
-            <a href="https://www.casinoware.net/" target="_blank">
-              CasinoWare
-            </a>{" "}
-            Poker Room Software is free for up to 3 tables and 100 players. The
-            license is always free for small poker rooms, 501c3 charities, and
-            sports team fundraisers.
-          </p>
+    <div className={ServicesStyles.wrapper}>
+      <div className={ServicesStyles.content}>
+        <div className={ServicesStyles.header}>
+          <h1>SERVICES</h1>
         </div>
-        <div>
-          <h1>POKER ROOMS</h1>
+        <div className={ServicesStyles.container}>
+          {/* <div> */}
           <div>
-            <Img
-              objectFit="cover"
-              imgStyle={{ objectFit: "contain" }}
-              fluid={data.image2.childImageSharp.fluid}
-              alt=""
-            />
+            <div style={{ position: "relative" }}>
+              <Img
+                objectFit="cover"
+                imgStyle={{
+                  borderRadius: "10px 10px 0px 0px",
+                  objectFit: "contain",
+                }}
+                fluid={data.image1.childImageSharp.fluid}
+                alt=""
+              />
+              {/* <div className={ServicesStyles.overlay}></div> */}
+            </div>
+            <h1>POKER ROOM SOFTWARE</h1>
+            <p>
+              TeamPoker®{" "}
+              <a href="https://www.casinoware.net/" target="_blank">
+                CasinoWare
+              </a>{" "}
+              Poker Room Software is free for up to 3 tables and 100 players.
+              The license is always free for small poker rooms, 501c3 charities,
+              and sports team fundraisers.
+            </p>
+            {/* <div className={ServicesStyles.overlay}></div> */}
           </div>
-          <p>
-            Casinos can purchase the TeamPoker® process for their room for an
-            additional $30/month to the CasinoWare basic system fee.{" "}
-            <a href="https://www.casinoware.net/" target="_blank">
-              CasinoWare
-            </a>{" "}
-            is the most professional poker room software available.
-          </p>
-        </div>
-        <div>
-          <h1>CHAMPIONSHIP LICENSES</h1>
+          {/* <div className={ServicesStyles.overlay}></div> */}
           <div>
-            <Img
-              objectFit="cover"
-              imgStyle={{ objectFit: "contain" }}
-              fluid={data.image3.childImageSharp.fluid}
-              alt=""
-            />
+            {/* <h1>POKER ROOMS</h1> */}
+            <div>
+              <Img
+                objectFit="cover"
+                imgStyle={{
+                  objectFit: "contain",
+                  borderRadius: "10px 10px 0px 0px",
+                }}
+                fluid={data.image2.childImageSharp.fluid}
+                alt=""
+              />
+              {/* <div className={ServicesStyles.overlay}></div> */}
+            </div>
+            <h1>POKER ROOMS</h1>
+            <p>
+              Casinos can purchase the TeamPoker® process for their room for an
+              additional $30/month to the CasinoWare basic system fee.{" "}
+              <a href="https://www.casinoware.net/" target="_blank">
+                CasinoWare
+              </a>{" "}
+              is the most professional poker room software available.
+            </p>
           </div>
-          <p>
-            TeamPoker® Championship Licenses can be purchased directly with
-            TeamPoker LLC. We are looking for casinos that want to host
-            TeamPoker® Championships for their City, State, or Country.
-          </p>
+          <div>
+            <div>
+              <Img
+                objectFit="cover"
+                imgStyle={{
+                  borderRadius: "10px 10px 0px 0px",
+                  objectFit: "contain",
+                }}
+                fluid={data.image3.childImageSharp.fluid}
+                alt=""
+              />
+              {/* <div className={ServicesStyles.overlay}></div> */}
+            </div>
+            <h1>CHAMPIONSHIP LICENSES</h1>
+            <p>
+              TeamPoker® Championship Licenses can be purchased directly with
+              TeamPoker LLC. We are looking for casinos that want to host
+              TeamPoker® Championships for their City, State, or Country.
+            </p>
+          </div>
+          {/* </div> */}
         </div>
-        {/* </div> */}
       </div>
     </div>
   )
