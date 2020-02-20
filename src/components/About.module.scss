@@ -1,0 +1,117 @@
+.wrapper {
+  // margin-top: 100px;
+  // margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-around;
+  // align-content: space-between;
+  // flex-wrap: wrap;
+}
+
+.content > div {
+  // align-content: space-between;
+  // flex: 1;
+  width: 50%;
+  // border: 1px solid red;
+  // flex: 1;
+  min-height: 480px;
+}
+
+.aboutWrapper {
+  // flex: 1;
+  display: flex;
+  // flex-direction: column;
+  // background-color: #323232;
+  align-items: center;
+  // justify-content: center;
+  // justify-content: center;
+  .about {
+    // border: 1px solid red;
+    // flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+    h1 {
+      margin: 0;
+      // margin-bottom: 40px;
+      color: rgb(48, 48, 48);
+      display: inline;
+      // margin: 2rem 0;
+      font-size: 4rem;
+      background-image: linear-gradient(
+        120deg,
+        #5ce1ff 0%,
+        rgb(241, 241, 241) 100%
+      );
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+    }
+    p {
+      padding-top: 40px;
+      color: rgb(48, 48, 48);
+      font-family: "Roboto", sans-serif;
+      font-size: 2.6rem;
+    }
+    text-align: center;
+  }
+}
+
+.textWrapper {
+  // flex: 1;
+  background-color: #323232;
+  display: flex;
+  // flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  // & div {
+  //   width: "200px";
+  //   // display: block;
+  //   color: #ffffff;
+  //   font-family: "Roboto", sans-serif;
+  //   font-size: 2rem;
+  //   // margin-bottom: 22px;
+  // }
+}
+
+.textWrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // align-self: center;
+  width: 50%;
+  padding: 20px;
+  color: #ffffff;
+
+  p {
+    padding-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+  }
+}
+
+.button {
+  margin-top: 50px;
+  padding: 15px 40px;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  // background-color: white;
+  // background-position-x: 100%;
+  background: #00d2ff;
+  // box-shadow: 4px 4px 0px #00d2ff;
+  border-radius: 1px;
+
+  &:hover {
+    background-position: left center;
+  }
+}

@@ -27,7 +27,7 @@ const content = () => {
             WE MAKE POKER A{" "}
             <span className={contentStyles.team}>TEAM SPORT</span>
           </h1>
-          <p>
+          {/* <p>
             • The patented system allows both Individuals and Teams to compete
             in poker tournaments.
             <br />
@@ -35,7 +35,7 @@ const content = () => {
             Protocol.
             <br /> • Any Size Team is possible in the same tournament with the
             Team Poker® Handicapping System.
-          </p>
+          </p> */}
           <button className={contentStyles.button}>How it works</button>
         </div>
       </div>
