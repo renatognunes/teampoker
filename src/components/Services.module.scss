@@ -1,6 +1,7 @@
 .wrapper {
   // box-sizing: border-box;
   padding-top: 18px;
+  padding-bottom: 70px;
   // margin-top: 30px;
   // display: block;
   background: rgb(241, 241, 241);
@@ -48,8 +49,9 @@
 .container > div {
   // display: table;
   background: white;
+  padding: 5px;
   cursor: pointer;
-  border-radius: 10px;
+  // border-radius: 10px;
   min-height: 380px;
   // border: 1px solid rgb(212, 212, 212);
   flex: 1;

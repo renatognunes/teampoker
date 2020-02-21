@@ -18,23 +18,23 @@ import ServicesStyles from "./Services.module.scss"
 const Services = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "services1.jpg" }) {
+      image1: file(relativePath: { eq: "services9.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 540) {
+          fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image2: file(relativePath: { eq: "services4.jpeg" }) {
+      image2: file(relativePath: { eq: "services7.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 540) {
+          fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       image3: file(relativePath: { eq: "services2.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 540) {
+          fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -55,7 +55,7 @@ const Services = () => {
               <Img
                 objectFit="cover"
                 imgStyle={{
-                  borderRadius: "10px 10px 0px 0px",
+                  // borderRadius: "10px 10px 0px 0px",
                   objectFit: "contain",
                 }}
                 fluid={data.image1.childImageSharp.fluid}
@@ -83,7 +83,7 @@ const Services = () => {
                 objectFit="cover"
                 imgStyle={{
                   objectFit: "contain",
-                  borderRadius: "10px 10px 0px 0px",
+                  // borderRadius: "10px 10px 0px 0px",
                 }}
                 fluid={data.image2.childImageSharp.fluid}
                 alt=""
@@ -105,7 +105,8 @@ const Services = () => {
               <Img
                 objectFit="cover"
                 imgStyle={{
-                  borderRadius: "10px 10px 0px 0px",
+                  // borderRadius: "10px 10px 0px 0px",
+                  // border: "4px solid white",
                   objectFit: "contain",
                 }}
                 fluid={data.image3.childImageSharp.fluid}
