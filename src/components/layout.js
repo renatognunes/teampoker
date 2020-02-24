@@ -5,6 +5,7 @@ import React from "react"
 import Header from "./header"
 import Services from "./Services"
 import About from "./About"
+import Clients from "./Clients"
 import "normalize.css"
 import "../styles/global.scss"
 
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
       <Header />
       <Services />
       <About />
+      <Clients />
     </>
     //       <Header />
     //       <div
