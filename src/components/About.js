@@ -45,10 +45,16 @@ const About = () => {
           <div className={AboutStyles.about}>
             <h1>We're Team Poker®</h1>
             <p>
-              Join the New Poker Paradigm! <br />
-              TeamPoker® is <i>“The Patented Card Game Process”</i> for the New
+              {/* Join the New Poker Paradigm!
+              <br />
+              Start a Team and Own the Club.
+              <br />
+              If your Room Doesn’t Play TeamPoker® Demand It! */}
+              {/* Join the New Poker Paradigm! <br /> */}
+              TeamPoker® is <i>“The Patented Card Game Process” </i> for the New
               Poker Sports Model.
             </p>
+            <p>Start a Team and Own the Club!</p>
             {/* <Img
               // style={{ boxShadow: "10px 101px #403492" }}
               // objectFit="cover"
