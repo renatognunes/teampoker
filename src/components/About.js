@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import AboutStyles from "./About.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faCoffee,
   faCertificate,
   faExclamationTriangle,
   faUsers,
@@ -46,8 +45,9 @@ const About = () => {
           <div className={AboutStyles.about}>
             <h1>We're Team Poker®</h1>
             <p>
-              Team Poker® is a patented scoring system that allows both
-              individuals and teams to compete in poker tournaments.{" "}
+              Join the New Poker Paradigm! <br />
+              TeamPoker® is <i>“The Patented Card Game Process”</i> for the New
+              Poker Sports Model.
             </p>
             {/* <Img
               // style={{ boxShadow: "10px 101px #403492" }}
@@ -66,7 +66,7 @@ const About = () => {
         <div className={AboutStyles.textWrapper}>
           <div>
             {/* <FontAwesomeIcon icon="spinner" size="xs" /> */}
-            <FontAwesomeIcon size="5x" icon={faCertificate} />
+            <FontAwesomeIcon size="5x" color={"#bbb96d"} icon={faCertificate} />
             <p>
               {/* <FontAwesomeIcon icon="check-square" /> */}
               {/* <FontAwesomeIcon icon={faCertificate} /> */}
@@ -76,7 +76,11 @@ const About = () => {
           </div>
           <br />
           <div>
-            <FontAwesomeIcon size="5x" icon={faExclamationTriangle} />
+            <FontAwesomeIcon
+              size="5x"
+              color={"#b25344"}
+              icon={faExclamationTriangle}
+            />
             <p>
               Our Poker Sports Model includes options for Collusion Free Seating
               Protocol.
@@ -84,10 +88,10 @@ const About = () => {
           </div>
           <br />
           <div>
-            <FontAwesomeIcon size="5x" icon={faUsers} />
+            <FontAwesomeIcon size="5x" color={"#339966"} icon={faUsers} />
             <p>
-              Any Size Team is possible in the same tournament with the Team
-              Poker® Handicapping System.
+              Any Size Team is possible in the same tournament with the
+              TeamPoker® Handicapping System.
             </p>
           </div>
           <div>
