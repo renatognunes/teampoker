@@ -37,6 +37,14 @@
     align-items: center;
     padding: 50px;
 
+    .headline {
+      padding-top: 40px;
+      color: rgb(48, 48, 48);
+      // font-family: "Roboto", sans-serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
     h1 {
       margin: 0;
       // margin-bottom: 40px;

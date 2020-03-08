@@ -9,22 +9,6 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons"
 
-{
-  /* <FontAwesomeIcon icon={faCoffee} /> */
-}
-
-// export const data = useStaticQuery(graphql`
-//   query {
-//     fileName: file(relativePath: { eq: "images/software-services.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 400, maxHeight: 250) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `);
-
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -43,7 +27,7 @@ const About = () => {
       <div className={AboutStyles.content}>
         <div className={AboutStyles.aboutWrapper}>
           <div className={AboutStyles.about}>
-            <h1>We're Team Poker®</h1>
+            <h1>We're TeamPoker®</h1>
             <p>
               {/* Join the New Poker Paradigm!
               <br />
@@ -54,7 +38,9 @@ const About = () => {
               TeamPoker® is <i>“The Patented Card Game Process” </i> for the New
               Poker Sports Model.
             </p>
-            <p>Start a Team and Own the Club!</p>
+            <span className={AboutStyles.headline}>
+              Start a Team and Own the Club!
+            </span>
             {/* <Img
               // style={{ boxShadow: "10px 101px #403492" }}
               // objectFit="cover"

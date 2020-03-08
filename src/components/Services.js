@@ -32,7 +32,7 @@ const Services = () => {
           }
         }
       }
-      image3: file(relativePath: { eq: "services2.jpeg" }) {
+      image3: file(relativePath: { eq: "services10.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -58,16 +58,15 @@ const Services = () => {
                   // borderRadius: "10px 10px 0px 0px",
                   objectFit: "contain",
                 }}
-                fluid={data.image1.childImageSharp.fluid}
+                fluid={data.image2.childImageSharp.fluid}
                 alt=""
               />
               {/* <div className={ServicesStyles.overlay}></div> */}
             </div>
-            <h1>POKER ROOM SOFTWARE</h1>
+            <h1>LIVE POKER ROOM SOFTWARE</h1>
             <p>
-              TeamPoker® offers licensing for live poker events through our
-              poker software partners. Bring TeamPoker® to your software or
-              download one of our software partners.
+              Team Poker® offers limited licensing for live poker room events
+              now through our software partners for their events.
               {/* TeamPoker®{" "}
               <a href="https://www.casinoware.net/" target="_blank">
                 CasinoWare
@@ -88,18 +87,20 @@ const Services = () => {
                   objectFit: "contain",
                   // borderRadius: "10px 10px 0px 0px",
                 }}
-                fluid={data.image2.childImageSharp.fluid}
+                fluid={data.image3.childImageSharp.fluid}
                 alt=""
               />
               {/* <div className={ServicesStyles.overlay}></div> */}
             </div>
-            <h1>POKER ROOMS</h1>
+            <h1>ONLINE POKER ROOMS</h1>
             <p>
               {/* We are looking for more partners for both LIVE and ONLINE
               TeamPoker®. Contact us about Licensing. */}
-              Casinos can purchase the TeamPoker® process for their rooms or
+              We are looking for ONLINE poker rooms to implement TeamPoker® in
+              their poker rooms. Contact us about licensing.
+              {/* Casinos can purchase the TeamPoker® process for their rooms or
               partnership for both live and online TeamPoker® events. Contact us
-              for licensing and partnerships.
+              for licensing and partnerships. */}
               {/* additional $30/month to the CasinoWare basic system fee.{" "}
               <a href="https://www.casinoware.net/" target="_blank">
                 CasinoWare
@@ -116,16 +117,18 @@ const Services = () => {
                   // border: "4px solid white",
                   objectFit: "contain",
                 }}
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image1.childImageSharp.fluid}
                 alt=""
               />
               {/* <div className={ServicesStyles.overlay}></div> */}
             </div>
             <h1>CHAMPIONSHIP LICENSES</h1>
             <p>
-              We also want to partner with live casinos and online poker rooms
+              We also are looking for partners for both LIVE and ONLINE poker
+              rooms in support of The World Team Poker Championship™.
+              {/* We also want to partner with live casinos and online poker rooms
               for the World Team Poker Championship™ Series. Contact us for more
-              details about licensing TeamPoker®.
+              details about licensing TeamPoker®. */}
               {/* We also want to Partner with LIVE CASINOS and ONLINE Poker Rooms.
               Contact us about Licensing. */}
               {/* TeamPoker® Championship Licenses can be purchased directly with

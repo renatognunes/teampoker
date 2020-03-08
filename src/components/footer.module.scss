@@ -1,0 +1,70 @@
+.wrapper {
+  background-color: #323232;
+  min-height: 270px;
+  padding: 10px 10px;
+  padding-top: 50px;
+}
+
+.content {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 30px;
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  & div {
+    text-align: center;
+  }
+  & h2 {
+    padding-bottom: 25px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  .emails {
+    & span {
+      display: block;
+      text-align: left;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    & a {
+      margin-bottom: 6px;
+      text-align: left;
+    }
+  }
+}
+
+.copyright {
+  .icons {
+    & svg {
+      margin: 0px 8px;
+      margin-bottom: 6px;
+    }
+  }
+  & .patent span {
+    margin-bottom: 6px;
+    display: block;
+  }
+}
+
+.footer {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+}

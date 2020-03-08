@@ -6,6 +6,7 @@ import Header from "./header"
 import Services from "./Services"
 import About from "./About"
 import Clients from "./Clients"
+import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.scss"
 
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
       <Services />
       <About />
       <Clients />
+      <Footer />
     </>
     //       <Header />
     //       <div
