@@ -125,14 +125,31 @@
     align-items: center;
   }
   .headline {
-    padding: 0 3rem;
+    padding: 0 1rem;
     text-align: center;
     p {
       font-size: 1.6rem;
     }
   }
-  .container > div:last-child {
-    display: none;
+
+  .headline h1 {
+    // color: white;
+    -webkit-text-stroke: 0.3rem white;
+    font-size: 3.7rem;
+    letter-spacing: 0.4rem;
+    // text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    // background: #00d0ffc5;
+    // background-size: 100px;
+    // background-position-y: 10%;
+    // background-blend-mode: multiply;
+    padding-bottom: 4px;
+    // text-shadow: 0px 3px 0px #00d2ff;
+    // .team {
+    //   color: transparent;
+    //   -webkit-text-stroke: 0.2rem white;
+    // }
   }
   .button {
     margin-top: 40px;

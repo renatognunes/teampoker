@@ -123,3 +123,51 @@
     background-position: left center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content > div {
+    // align-content: space-between;
+    // flex: 1;
+    width: 100%;
+    // border: 1px solid red;
+    // flex: 1;
+    // min-height: 480px;
+  }
+  .textWrapper {
+    // flex: 1;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    // justify-content: left;
+    // flex-wrap: wrap;
+    // padding: 60px 30px;
+    // & div {
+    //   width: "200px";
+    //   // display: block;
+    //   color: #ffffff;
+    //   font-family: "Roboto", sans-serif;
+    //   font-size: 2rem;
+    //   // margin-bottom: 22px;
+    // }
+  }
+
+  .textWrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // align-self: center;
+    width: 100%;
+    padding: 20px 5px;
+    color: #ffffff;
+
+    p {
+      padding-top: 15px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -184,6 +184,7 @@
     width: 220px;
   }
   .nav-bar {
+    z-index: 2;
     position: absolute;
     right: 0px;
     width: 50%;
@@ -207,6 +208,7 @@
   }
   .header .burgerContainer {
     display: block;
+    z-index: 3;
   }
 }
 
