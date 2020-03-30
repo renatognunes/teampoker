@@ -5,9 +5,8 @@ import BackgroundSlider from "gatsby-image-background-slider"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "./image"
 import classNames from "classnames"
-import Content from "./content"
 
-const Header = props => {
+const Header = () => {
   const [isNavbarOpen, changeNavbar] = React.useState(false)
 
   const inputEl = React.useRef(null)
@@ -17,47 +16,10 @@ const Header = props => {
   })
 
   return (
-    <div className={layoutStyles.headerWrapper}>
-      <div className={layoutStyles.backgroundWrapperBack} />
-
-      <div className={layoutStyles.backgroundWrapper} />
-      <BackgroundSlider
-        query={useStaticQuery(graphql`
-          query {
-            backgrounds: allFile(
-              filter: { sourceInstanceName: { eq: "images" } }
-            ) {
-              nodes {
-                relativePath
-                childImageSharp {
-                  fluid(maxWidth: 4000, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        `)}
-        initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
-        transition={2} // transition duration between images
-        duration={4} // how long an image is shown
-        // specify images to include (and their order) according to `relativePath`
-        images={["foto3.jpg", "foto4.jpg", "foto.jpg"]}
-        // pass down standard element props
-        style={{
-          maxHeight: "550px",
-          width: "100%",
-          backgroundRepeat: "no-repeat",
-          // opacity: 0.5,
-          // backgroundColor: "black",
-          // backgroundSize: "cover",
-          // background: "blue",
-          backgroundPosition: "top",
-          // top: 0,
-          zIndex: -1,
-          // transform: "rotate(-2deg) scale(.9)",
-        }}
-      ></BackgroundSlider>
+    <div
+      style={{ background: "#323232" }}
+      className={layoutStyles.headerWrapper}
+    >
       <nav className={layoutStyles.header}>
         <Link to="/">
           <div className={layoutStyles.logo}>
@@ -97,7 +59,6 @@ const Header = props => {
           </div>
         </div>
       </nav>
-      <Content text={props.text} hideButton={false} />
       {/* </BackgroundSlider> */}
     </div>
   )

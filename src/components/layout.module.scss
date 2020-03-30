@@ -216,3 +216,7 @@
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
 }
+
+.navbar-background {
+  background-color: rgba($color: #12100e, $alpha: 0.96);
+}

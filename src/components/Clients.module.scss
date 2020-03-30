@@ -22,12 +22,14 @@
     font-size: 4rem;
     background-image: linear-gradient(
       120deg,
-      #5ce1ff 0%,
-      rgb(241, 241, 241) 100%
+      #5ce1ff00 0%,
+      #5ce1ffa6 50%,
+      #5ce1ff00 100%
     );
+    padding-bottom: 8px;
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
-    background-position: 0 88%;
+    background-position: 0 102%;
   }
 }
 

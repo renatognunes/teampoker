@@ -18,14 +18,14 @@ const Image = () => {
   return <Img fluid={data.file.childImageSharp.fluid} />
 }
 
-const content = () => {
+const content = props => {
   return (
     <div className={contentStyles.container}>
       <div>
         <div className={contentStyles.headline}>
-          <h1>
-            WE MAKE POKER A{" "}
-            <span className={contentStyles.team}>TEAM SPORT</span>
+          <h1 style={{ paddingBottom: props.paddingHeader }}>
+            {props.text}
+            {/* WE MAKE POKER A TEAM SPORT */}
           </h1>
           {/* <p>
             • The patented system allows both Individuals and Teams to compete
@@ -36,7 +36,10 @@ const content = () => {
             <br /> • Any Size Team is possible in the same tournament with the
             Team Poker® Handicapping System.
           </p> */}
-          <button className={contentStyles.button}>How it works</button>
+          {!props.hideButton && (
+            <button className={contentStyles.button}>How it works</button>
+          )}
+          {/* <button className={contentStyles.button}>How it works</button> */}
         </div>
       </div>
       {/* <div>

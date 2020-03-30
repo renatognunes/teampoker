@@ -38,18 +38,18 @@ const Header = props => {
             }
           }
         `)}
-        initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
-        transition={2} // transition duration between images
-        duration={4} // how long an image is shown
+        initDelay={0} // delay before the first transition (if left at 0, the first image will be skipped initially)
+        transition={0} // transition duration between images
+        duration={0} // how long an image is shown
         // specify images to include (and their order) according to `relativePath`
-        images={["foto3.jpg", "foto4.jpg", "foto.jpg"]}
+        images={["pokerbg.jpg"]}
         // pass down standard element props
         style={{
           maxHeight: "550px",
           width: "100%",
           backgroundRepeat: "no-repeat",
-          // opacity: 0.5,
-          // backgroundColor: "black",
+          opacity: 0.5,
+          backgroundColor: "black",
           // backgroundSize: "cover",
           // background: "blue",
           backgroundPosition: "top",
@@ -97,7 +97,7 @@ const Header = props => {
           </div>
         </div>
       </nav>
-      <Content text={props.text} hideButton={false} />
+      <Content text={props.text} hideButton={true} paddingHeader={70} />
       {/* </BackgroundSlider> */}
     </div>
   )

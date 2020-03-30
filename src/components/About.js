@@ -35,8 +35,8 @@ const About = () => {
               <br />
               If your Room Doesn’t Play TeamPoker® Demand It! */}
               {/* Join the New Poker Paradigm! <br /> */}
-              TeamPoker® is <i>“The Patented Card Game Process” </i> for the New
-              Poker Sports Model.
+              TeamPoker® is <i>“The Patented Card Game Process” </i>for the New
+              Tournament Poker Team Sports Model.
             </p>
             <span className={AboutStyles.headline}>
               Start a Team and Own the Club!
