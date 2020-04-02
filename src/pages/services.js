@@ -44,7 +44,16 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Header text="MARKET INITIATIVES" />
+      <Header
+        text={
+          <>
+            <span>SERVICES</span> <br />
+            <span>&</span>
+            <br />
+            <span>MARKET INITIATIVES</span>
+          </>
+        }
+      />
       <div className={ServicesStyles.wrapper}>
         <div id="live-poker" className={ServicesStyles.section}>
           <div className={ServicesStyles.header}>
@@ -88,36 +97,43 @@ const ServicesPage = () => {
               </div>
             </div>
           </div>
-          <p>
-            Team Poker® offers limited event licensing for single casino
-            internal LIVE Poker Rooms now through our existing tournament
-            software Partners. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed dolor ex, semper id odio sed, sagittis
-            tincidunt quam. Vestibulum vitae elit nisi. Nullam eu dolor eget
-            ante sodales egestas. Nulla pellentesque malesuada lacus eu tempor.
-            Fusce pellentesque at risus eget porttitor. Cras commodo tellus
-            sapien, sit amet mattis sapien aliquam ut. Curabitur nec massa eget
-            diam euismod mattis non in ante. Donec elementum non augue in
-            placerat. Praesent tempus interdum orci, in iaculis erat placerat
-            vel. Vivamus vel placerat arcu. Integer eleifend aliquet volutpat.
-            Nullam vel metus efficitur, faucibus dui non, blandit justo.
-            Praesent convallis lectus ac purus dignissim placerat. Proin vel
-            finibus urna. Duis in condimentum lorem, a porta ligula. Praesent
-            tempus interdum orci, in iaculis erat placerat vel. Vivamus vel
-            placerat arcu. Integer eleifend aliquet volutpat. Nullam vel metus
-            efficitur, faucibus dui non, blandit justo. Praesent convallis
-            lectus ac purus dignissim placerat. Proin vel finibus urna. Duis in
-            condimentum lorem, a porta ligula. Integer eleifend aliquet
-            volutpat. Nullam vel metus efficitur, faucibus dui non, blandit
-            justo. Praesent convallis lectus ac purus dignissim placerat. Proin
-            vel finibus urna. Duis in condimentum lorem, a porta ligula.
-          </p>
+          <div className={ServicesStyles.text}>
+            <p>
+              Team Poker® has partnered with the most professional Live Poker
+              Room software providers available. Their Poker Room Management and
+              Tournament Software is available now to any large or small Casino
+              and Poker Room. The poker software is the best in the World and
+              can handle all aspects of poker room management for Cash and
+              Tournament Poker Play.{" "}
+            </p>
+            <p>
+              Our Live Poker Room Software Partners meet and provide all
+              requirements of Team Poker® including:{" "}
+              <span className={ServicesStyles.lead}>
+                (1) Team and Individual Scoring and Payouts; (2) Poker Team
+                Handicapping;{" "}
+              </span>{" "}
+              and,{" "}
+              <span className={ServicesStyles.lead}>
+                (3) Non- Contact Seating Protocol.{" "}
+              </span>
+              It is easy to run Team Poker® Events of any size from small
+              Satellites to Massively Large Tournaments with thousands of
+              players. Our Partners offer Team Poker® limited licensing from
+              FREE to Monthly & Yearly Subscriptions.
+            </p>
+          </div>
+          <div className={ServicesStyles.contact}>
+            <button className={ServicesStyles.button}>
+              Contact us for Poker Room Software
+            </button>
+          </div>
         </div>
 
         <div
           id="online-poker"
           className={ServicesStyles.section}
-          style={{ background: "rgb(241, 241, 241)" }}
+          style={{ background: "#f7f7f7" }}
         >
           <div className={ServicesStyles.header}>
             <h1>ONLINE POKER ROOMS</h1>
@@ -163,30 +179,30 @@ const ServicesPage = () => {
             /> */}
           {/* <div className={ServicesStyles.overlay}></div> */}
           {/* </div> */}
-          <p>
-            We are looking for ONLINE Poker Rooms to implement the TeamPoker®
-            System in their Rooms. Contact us about Requirements and licensing.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor
-            ex, semper id odio sed, sagittis tincidunt quam. Vestibulum vitae
-            elit nisi. Nullam eu dolor eget ante sodales egestas. Nulla
-            pellentesque malesuada lacus eu tempor. Fusce pellentesque at risus
-            eget porttitor. Cras commodo tellus sapien, sit amet mattis sapien
-            aliquam ut. Curabitur nec massa eget diam euismod mattis non in
-            ante. Donec elementum non augue in placerat. Praesent tempus
-            interdum orci, in iaculis erat placerat vel. Vivamus vel placerat
-            arcu. Integer eleifend aliquet volutpat. Nullam vel metus efficitur,
-            faucibus dui non, blandit justo. Praesent convallis lectus ac purus
-            dignissim placerat. Proin vel finibus urna. Duis in condimentum
-            lorem, a porta ligula. Praesent tempus interdum orci, in iaculis
-            erat placerat vel. Vivamus vel placerat arcu. Integer eleifend
-            aliquet volutpat. Nullam vel metus efficitur, faucibus dui non,
-            blandit justo. Praesent convallis lectus ac purus dignissim
-            placerat. Proin vel finibus urna. Duis in condimentum lorem, a porta
-            ligula. Integer eleifend aliquet volutpat. Nullam vel metus
-            efficitur, faucibus dui non, blandit justo. Praesent convallis
-            lectus ac purus dignissim placerat. Proin vel finibus urna. Duis in
-            condimentum lorem, a porta ligula.
-          </p>
+          <div className={ServicesStyles.textLeft}>
+            <p>
+              We are looking to Partner with Online Poker Rooms that can fully
+              implement the TeamPoker® Requirements and the New Poker Sports
+              Team Model in their software. Providers must meet capabilities of
+              the strict TeamPoker® requirements including the No-Contact
+              Seating Protocol, Scoring, and Team Handicapping.
+            </p>
+            <p>
+              {" "}
+              TeamPoker.com has implemented the Team Poker® Requirements in our
+              Charity Prototype and it can be used as an example of how to
+              implement the Sports Team Model including: establishing teams and
+              ownership rights, changing teams, tournament entry, initial &
+              consolidation seating protocol, and ranking individuals and teams.
+              The format mirrors the professional sports league model. Contact
+              us about licensing.
+            </p>
+          </div>
+          <div className={ServicesStyles.contact}>
+            <button className={ServicesStyles.button}>
+              Contact us for Online Poker Rooms
+            </button>
+          </div>
         </div>
 
         <div id="championship" className={ServicesStyles.section}>
@@ -232,31 +248,36 @@ const ServicesPage = () => {
             /> */}
           {/* <div className={ServicesStyles.overlay}></div> */}
           {/* </div> */}
-          <p>
-            Also wanted are Partners for both LIVE and ONLINE Poker Rooms in
-            support of The WORLD POKER TEAM CHAMPIONSHIP™ - Annual Series. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor ex,
-            semper id odio sed, sagittis tincidunt quam. Vestibulum vitae elit
-            nisi. Nullam eu dolor eget ante sodales egestas. Nulla pellentesque
-            malesuada lacus eu tempor. Fusce pellentesque at risus eget
-            porttitor. Cras commodo tellus sapien, sit amet mattis sapien
-            aliquam ut. Curabitur nec massa eget diam euismod mattis non in
-            ante. Donec elementum non augue in placerat. Praesent tempus
-            interdum orci, in iaculis erat placerat vel. Vivamus vel placerat
-            arcu. Integer eleifend aliquet volutpat. Nullam vel metus efficitur,
-            faucibus dui non, blandit justo. Praesent convallis lectus ac purus
-            dignissim placerat. Proin vel finibus urna. Duis in condimentum
-            lorem, a porta ligula. Praesent tempus interdum orci, in iaculis
-            erat placerat vel. Vivamus vel placerat arcu. Integer eleifend
-            aliquet volutpat. Nullam vel metus efficitur, faucibus dui non,
-            blandit justo. Praesent convallis lectus ac purus dignissim
-            placerat. Proin vel finibus urna. Duis in condimentum lorem, a porta
-            ligula. Integer eleifend aliquet volutpat. Nullam vel metus
-            efficitur, faucibus dui non, blandit justo. Praesent convallis
-            lectus ac purus dignissim placerat. Proin vel finibus urna. Duis in
-            condimentum lorem, a porta ligula.
-          </p>
+          <div className={ServicesStyles.text}>
+            <p>
+              We also are looking for partners for both LIVE and ONLINE poker
+              rooms in support of The WORLD POKER TEAM CHAMPIONSHIP™ (WPTC) -
+              SERIES. This Series will be conducted by location: Home Games,
+              City, State, Region, Country, Continent, and World Championship
+              Finals for both Live and Online Poker Rooms.
+            </p>
+            <p>
+              {" "}
+              The WPTC Series will be designed to implement the Poker Sports
+              Model for Poker Teams of Various Sizes, Classes, and Divisions all
+              leading to The WORLD POKER TEAM CHAMPIONSHIP™ - Finals for Live
+              and Online Poker. All Production and Video Licenses for
+              Championship Licenses are issued separately. Contact Team Poker
+              LLC for requirements and Licensing Partnerships for Team Poker®
+              Championships.
+            </p>
+          </div>
+          <div className={ServicesStyles.contact}>
+            <button className={ServicesStyles.button}>
+              Contact us for Licenses
+            </button>
+          </div>
         </div>
+        {/* <div className={ServicesStyles.contact}>
+          <button className={ServicesStyles.button}>
+            Contact us for Linceses
+          </button>
+        </div> */}
       </div>
       <Footer />
     </>

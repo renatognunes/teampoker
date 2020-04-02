@@ -1,7 +1,7 @@
 .wrapper {
   // box-sizing: border-box;
-  padding-top: 18px;
-  padding-bottom: 70px;
+  // padding-top: 18px;
+  // padding-bottom: 70px;
   // padding: 50px;
   // margin-top: 30px;
   // display: block;
@@ -12,9 +12,44 @@
   top: 20px;
 }
 
+//   .textWrapper {
+//     padding: 70px;
+//     p {
+//       padding-bottom: 40px;
+//       color: rgb(48, 48, 48);
+//       // font-family: "Roboto", sans-serif;
+//       font-size: 2rem;
+//       text-align: left;
+//       ol {
+//         display: block;
+//         margin-top: 1em;
+//         margin-bottom: 1em;
+//         margin-left: 0;
+//         margin-right: 0;
+//         padding-left: 100px;
+//         li {
+//           list-style-position: inside;
+//           list-style: lower-alpha;
+//           margin-top: 1em;
+//           margin-bottom: 1em;
+//         }
+//       }
+//     }
+//     .title {
+//       padding-bottom: 10px;
+//       font-weight: 600;
+//       font-size: 2.6rem;
+//     }
+//   }
+
+//   p {
+//   }
+// }
+
 .header {
-  padding-bottom: 46px;
-  padding-top: 46px;
+  grid-area: title;
+  padding-bottom: 50px;
+  // padding-top: 46px;
   text-align: center;
   h1 {
     color: rgb(48, 48, 48);
@@ -32,48 +67,23 @@
     background-size: 100% 0.2em;
     background-position: 0 102%;
   }
-
-  .textWrapper {
-    padding: 70px;
-    p {
-      padding-bottom: 40px;
-      color: rgb(48, 48, 48);
-      // font-family: "Roboto", sans-serif;
-      font-size: 2rem;
-      text-align: left;
-      ol {
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 100px;
-        li {
-          list-style-position: inside;
-          list-style: lower-alpha;
-          margin-top: 1em;
-          margin-bottom: 1em;
-        }
-      }
-    }
-    .title {
-      padding-bottom: 10px;
-      font-weight: 600;
-      font-size: 2.6rem;
-    }
-  }
-
-  p {
-  }
 }
 
 .section {
-  padding: 10px 50px;
+  padding: 50px 50px;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "card text"
+    "contact contact";
+  align-items: center;
+  gap: 20px;
+  // padding: 70px 50px;
   p {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     color: rgb(48, 48, 48);
-    // font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     text-align: left;
     ol {
       display: block;
@@ -92,10 +102,14 @@
   }
 }
 
+.lead {
+  font-weight: 700;
+}
+
 .img {
   width: 500px;
   float: left;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .imgRight {
@@ -106,27 +120,31 @@
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card-right {
-  margin: 10px 30px;
+  grid-area: text;
+  margin: 0px 10px;
   float: right;
   background-color: transparent;
   width: 500px;
-  height: 243px;
-  // border: 1px solid #f1f1f1;
+  height: 252px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 .flip-card {
-  margin: 10px 30px;
+  grid-area: card;
+  position: relative;
+  margin: 0px 10px;
   float: left;
   background-color: transparent;
   width: 500px;
-  height: 243px;
-  // border: 1px solid #f1f1f1;
+  height: 252px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #e6e6e6;
+  border: 10px solid #f7f7f7;
   position: relative;
   width: 100%;
   height: 100%;
@@ -153,22 +171,62 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background-color: #bbb;
   color: rgb(255, 255, 255);
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(48, 48, 48);
-  // background-color: dodgerblue;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 20px;
+  background: #222222;
+  background-image: linear-gradient(315deg, #313131 0%, #222222 74%);
   color: white;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  h1 {
+    font-size: 2.4rem;
+  }
   p {
     color: white;
     text-align: center;
+  }
+}
+
+.text {
+  grid-area: text;
+}
+
+.textRight {
+  grid-area: card;
+}
+
+.contact {
+  grid-area: contact;
+  text-align: center;
+}
+
+.button {
+  margin-top: 50px;
+  padding: 15px 40px;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  // background-color: white;
+  // background-position-x: 100%;
+  background: #00d2ff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  // border-radius: 30px;
+
+  &:hover {
+    background-position: left center;
   }
 }
