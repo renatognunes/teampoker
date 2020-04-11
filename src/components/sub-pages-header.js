@@ -42,7 +42,7 @@ const Header = props => {
         transition={0} // transition duration between images
         duration={0} // how long an image is shown
         // specify images to include (and their order) according to `relativePath`
-        images={["pokerbg.jpg"]}
+        images={[props.image]}
         // pass down standard element props
         style={{
           maxHeight: "550px",
@@ -69,7 +69,7 @@ const Header = props => {
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="#">Partners</Link>
+            <Link to="/partners">Partners</Link>
           </li>
           <li>
             <Link to="#">Gallery</Link>
@@ -97,7 +97,12 @@ const Header = props => {
           </div>
         </div>
       </nav>
-      <Content text={props.text} hideButton={true} paddingHeader={70} />
+      <Content
+        buttonText={props.buttonText}
+        text={props.text}
+        hideButton={props.hideButton}
+        paddingHeader={props.padding}
+      />
       {/* </BackgroundSlider> */}
     </div>
   )

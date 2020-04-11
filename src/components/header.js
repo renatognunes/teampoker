@@ -69,7 +69,7 @@ const Header = props => {
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="#">Partners</Link>
+            <Link to="/partners">Partners</Link>
           </li>
           <li>
             <Link to="#">Gallery</Link>
@@ -97,7 +97,11 @@ const Header = props => {
           </div>
         </div>
       </nav>
-      <Content text={props.text} hideButton={false} />
+      <Content
+        text={props.text}
+        hideButton={false}
+        buttonText={props.buttonText}
+      />
       {/* </BackgroundSlider> */}
     </div>
   )

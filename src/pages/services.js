@@ -45,6 +45,9 @@ const ServicesPage = () => {
   return (
     <>
       <Header
+        image="pokerbg.jpg"
+        hideButton={true}
+        padding={50}
         text={
           <>
             <span>SERVICES</span> <br />

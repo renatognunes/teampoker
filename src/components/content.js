@@ -37,7 +37,7 @@ const content = props => {
             Team Poker® Handicapping System.
           </p> */}
           {!props.hideButton && (
-            <button className={contentStyles.button}>How it works</button>
+            <button className={contentStyles.button}>{props.buttonText}</button>
           )}
           {/* <button className={contentStyles.button}>How it works</button> */}
         </div>
