@@ -185,10 +185,10 @@ const ServicesPage = () => {
           <div className={ServicesStyles.textLeft}>
             <p>
               We are looking to Partner with Online Poker Rooms that can fully
-              implement the TeamPoker® Requirements and the New Poker Sports
-              Team Model in their software. Providers must meet capabilities of
-              the strict TeamPoker® requirements including the No-Contact
-              Seating Protocol, Scoring, and Team Handicapping.
+              implement the TeamPoker® Requirements and the Poker Sports Team
+              Model in their software. Providers must meet capabilities of the
+              strict TeamPoker® requirements including the No-Contact Seating
+              Protocol, Scoring, and Team Handicapping.
             </p>
             <p>
               {" "}

@@ -45,6 +45,17 @@ const Partners = props => {
         padding={0}
       />
       <div className={PartnersStyles.wrapper}>
+        <div className={PartnersStyles.headline_bottom}>
+          <h1>Become a Team Poker® Partner</h1>
+        </div>
+        <div className={PartnersStyles.headlinetop} id="casinoware">
+          <p>
+            Become a Team Poker® Partner and join the Poker Sports Model where
+            both Individuals and Teams compete for cash, glory and fame!
+            {/* <br /> Help us make Poker a Team Sport! Start a Club and Own the
+            Team! */}
+          </p>
+        </div>
         <div className={PartnersStyles.container}>
           <Img
             style={{ margin: 50 }}
@@ -57,17 +68,33 @@ const Partners = props => {
               <h1>CasinoWare</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              CasinoWare is the ultimate poker tournament, cash game and casino
+              management software package. You will not find a more
+              professional, feature rich, easy to use tool for running your
+              tournaments.
+              {/* With the CasinoWare you can focus on playing in your tournaments instead of running them - CasinoWare runs them for you. */}
+              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+              nisi ut aliquip ex ea commodo consequat.{" "} */}
             </p>
             <div className={PartnersStyles.contact}>
-              <button className={PartnersStyles.button}>
+              <a
+                href="https://casinoware.net/"
+                target="_blank"
+                className={PartnersStyles.button}
+              >
                 Visit CasinoWare
-              </button>
+              </a>
             </div>
           </div>
+        </div>
+        <div className={PartnersStyles.headline} id="apt">
+          <p>
+            If you run a poker room or want to start one just download our
+            existing partners Poker Room Software and you can be playing Team
+            Poker® Tournaments immediately.
+          </p>
         </div>
         <div className={PartnersStyles.container2}>
           <div className={PartnersStyles.text2}>
@@ -75,13 +102,23 @@ const Partners = props => {
               <h1>Australian Poker Tour</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              The Australian Poker Tour is a series of major poker tournaments
+              conducted throughout Australia. Australian Poker Tour Events take
+              place in some of the largest pubs and clubs in Australia’s largest
+              cities.
+              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+              nisi ut aliquip ex ea commodo consequat.{" "} */}
             </p>
             <div className={PartnersStyles.contact}>
-              <button className={PartnersStyles.button}>Visit APTLive</button>
+              <a
+                href="https://australianpokertour.com.au/"
+                target="_blank"
+                className={PartnersStyles.button}
+              >
+                Visit APTLive
+              </a>
             </div>
           </div>
           <Img
@@ -90,6 +127,13 @@ const Partners = props => {
             fluid={data.logo2.childImageSharp.fluid}
             alt=""
           />
+        </div>
+        <div className={PartnersStyles.headline} id="checkraise">
+          <p>
+            If you are a poker software developer for either Brick and Mortar/
+            Live Poker or an Online Poker Room, contact us about Licensing
+            Requirements to bring the Poker Team Paradigm to your Room.
+          </p>
         </div>
         <div className={PartnersStyles.container3}>
           <Img
@@ -103,17 +147,28 @@ const Partners = props => {
               <h1>Check Raise</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Check Raise Poker is a series of major poker tournaments conducted
+              throughout Australia. Team Poker® events has joined their schedule
+              to bring the Poker Sports Model to their live events.
+              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+              nisi ut aliquip ex ea commodo consequat.{" "} */}
             </p>
             <div className={PartnersStyles.contact}>
-              <button className={PartnersStyles.button}>
+              <a
+                href="https://www.facebook.com/Check-Raise-Poker-QLD-1090772524462203/"
+                target="_blank"
+                className={PartnersStyles.button}
+              >
                 Visit Check Raise
-              </button>
+              </a>
             </div>
           </div>
+        </div>
+
+        <div className={PartnersStyles.bottom}>
+          <button className={PartnersStyles.button}>Become a Partner</button>
         </div>
       </div>
       <Footer />

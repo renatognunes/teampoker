@@ -36,34 +36,37 @@ const Footer = () => {
           <h2>Follow us</h2>
           <div>
             <div className={FooterStyles.icons}>
-              <Link to="https://www.facebook.com/PlayTeamPoker">
+              <a href="https://www.facebook.com/PlayTeamPoker" target="_blank">
                 <FontAwesomeIcon
                   size="2x"
                   color={"#ffffff"}
                   icon={faFacebookSquare}
                 />
-              </Link>
-              <Link to="https://www.linkedin.com/company/18173656">
+              </a>
+              <a
+                href="https://www.linkedin.com/company/18173656"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   size="2x"
                   color={"#ffffff"}
                   icon={faLinkedin}
                 />
-              </Link>
-              <Link to="https://twitter.com/teampoker">
+              </a>
+              <a href="https://twitter.com/teampoker" target="_blank">
                 <FontAwesomeIcon
                   size="2x"
                   color={"#ffffff"}
                   icon={faTwitterSquare}
                 />
-              </Link>
-              <Link to="https://www.instagram.com/teampoker/">
+              </a>
+              <a href="https://www.instagram.com/teampoker/" target="_blank">
                 <FontAwesomeIcon
                   size="2x"
                   color={"#ffffff"}
                   icon={faInstagramSquare}
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

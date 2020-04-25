@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import ClientsStyles from "./Clients.module.scss"
 
 const Clients = () => {
@@ -40,18 +40,20 @@ const Clients = () => {
           {/* <div> */}
           {/* <div> */}
           {/* <div style={{ position: "relative" }}> */}
-          <Img
-            style={{ width: 280 }}
-            // objectFit="cover"
-            imgStyle={{
-              width: 280,
-              flexGrow: 1,
-              // borderRadius: "10px 10px 0px 0px",
-              // objectFit: "contain",
-            }}
-            fluid={data.logo1.childImageSharp.fluid}
-            alt=""
-          />
+          <Link to="/partners#casinoware">
+            <Img
+              style={{ width: 280 }}
+              // objectFit="cover"
+              imgStyle={{
+                width: 280,
+                flexGrow: 1,
+                // borderRadius: "10px 10px 0px 0px",
+                // objectFit: "contain",
+              }}
+              fluid={data.logo1.childImageSharp.fluid}
+              alt=""
+            />
+          </Link>
           {/* <div className={ClientsStyles.overlay}></div> */}
           {/* </div> */}
           {/* <h1>POKER ROOM SOFTWARE</h1>
@@ -70,18 +72,20 @@ const Clients = () => {
           {/* <div> */}
           {/* <h1>POKER ROOMS</h1> */}
           {/* <div> */}
-          <Img
-            style={{ width: 280 }}
-            // objectFit="cover"
-            imgStyle={{
-              width: 280,
-              flexGrow: 1,
-              // objectFit: "contain",
-              // borderRadius: "10px 10px 0px 0px",
-            }}
-            fluid={data.logo2.childImageSharp.fluid}
-            alt=""
-          />
+          <Link to="/partners#apt">
+            <Img
+              style={{ width: 280 }}
+              // objectFit="cover"
+              imgStyle={{
+                width: 280,
+                flexGrow: 1,
+                // objectFit: "contain",
+                // borderRadius: "10px 10px 0px 0px",
+              }}
+              fluid={data.logo2.childImageSharp.fluid}
+              alt=""
+            />
+          </Link>
           {/* <div className={ClientsStyles.overlay}></div> */}
           {/* </div> */}
           {/* <h1>POKER ROOMS</h1>
@@ -96,19 +100,21 @@ const Clients = () => {
           {/* </div> */}
           {/* <div> */}
           {/* <div> */}
-          <Img
-            // objectFit="cover"
-            style={{ width: 280 }}
-            imgStyle={{
-              width: 280,
-              flexGrow: 1,
-              // borderRadius: "10px 10px 0px 0px",
-              // border: "4px solid white",
-              // objectFit: "contain",
-            }}
-            fluid={data.logo3.childImageSharp.fluid}
-            alt=""
-          />
+          <Link to="/partners#checkraise">
+            <Img
+              // objectFit="cover"
+              style={{ width: 280 }}
+              imgStyle={{
+                width: 280,
+                flexGrow: 1,
+                // borderRadius: "10px 10px 0px 0px",
+                // border: "4px solid white",
+                // objectFit: "contain",
+              }}
+              fluid={data.logo3.childImageSharp.fluid}
+              alt=""
+            />
+          </Link>
           {/* <div className={ClientsStyles.overlay}></div> */}
           {/* </div> */}
           {/* <h1>CHAMPIONSHIP LICENSES</h1>

@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import AboutStyles from "./About.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -35,7 +35,7 @@ const About = () => {
               <br />
               If your Room Doesn’t Play TeamPoker® Demand It! */}
               {/* Join the New Poker Paradigm! <br /> */}
-              TeamPoker® is <i>“The Patented Card Game Process” </i>for the New
+              TeamPoker® is <i>“The Patented Card Game Process” </i>for the
               Tournament Poker Team Sports Model.
             </p>
             <span className={AboutStyles.headline}>
@@ -87,7 +87,9 @@ const About = () => {
             </p>
           </div>
           <div>
-            <button className={AboutStyles.button}>Learn more</button>
+            <Link to="/about">
+              <button className={AboutStyles.button}>Learn more</button>
+            </Link>
           </div>
         </div>
       </div>
