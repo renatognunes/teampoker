@@ -1,0 +1,152 @@
+.headlinetop {
+  margin: 10px auto 60px auto;
+  width: 80%;
+  p {
+    color: #272727d7;
+    padding: 50px 10px 0px 0px;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+
+.title {
+  padding-top: 60px;
+  text-align: center;
+  h1 {
+    color: rgb(48, 48, 48);
+    display: inline;
+    font-size: 4rem;
+    background-image: linear-gradient(
+      120deg,
+      #5ce1ff00 0%,
+      #5ce1ffa6 50%,
+      #5ce1ff00 100%
+    );
+    padding-bottom: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 102%;
+  }
+}
+
+.form {
+  font-size: 2.2rem;
+  margin: auto;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+}
+
+input {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  margin-left: 1rem;
+  width: 320px;
+  height: 40px;
+  padding: 0.2rem;
+  background: #f8f8f8;
+}
+
+select {
+  width: 320px;
+  margin-left: 1rem;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  background: #f8f8f8;
+}
+
+.form_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.message {
+  width: 100%;
+  display: block;
+  margin-top: 18px;
+  textarea {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 3px;
+    margin: 15px 0px;
+    width: 100%;
+    background: #f8f8f8;
+  }
+}
+
+.submit {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid #66cde4;
+  cursor: pointer;
+  background: #00c6ff;
+  background-image: linear-gradient(to right, #00c6ff 0%, #0084ff 140%);
+  box-shadow: 0px 0px 5px #0000002c;
+  border-radius: 3px;
+  word-spacing: 3px;
+
+  &:hover {
+    background-position: right;
+    border: 1px solid #9cebfd;
+    box-shadow: 0px 0px 10px #ffffff48;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headlinetop {
+    margin: 10px auto 20px auto;
+    p {
+      padding: 40px 10px 0px 0px;
+      font-size: 2.4rem;
+    }
+  }
+  .form_item {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  input,
+  select {
+    margin-top: 5px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .form_item {
+    align-items: center;
+    margin: 0px 0px;
+  }
+
+  .form_item > div {
+    margin: 20px 0px;
+    width: 95%;
+  }
+
+  .message {
+    width: 95%;
+  }
+
+  .submit {
+    text-align: center;
+  }
+}

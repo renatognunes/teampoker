@@ -1,0 +1,112 @@
+.container {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.8rem;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.image {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0px 6px 6px #1818184d;
+}
+
+.image:hover {
+  box-shadow: 0px 8px 10px #1818184d;
+}
+
+.eventContainer {
+  margin-top: 70px;
+  h2 {
+    color: rgb(48, 48, 48);
+    display: inline;
+    font-size: 3rem;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+.close {
+  background: rgba(255, 255, 255, 0.829);
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-weight: 900;
+  position: absolute;
+  color: rgb(48, 48, 48);
+  font-size: 1.8rem;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay_inner {
+  height: auto;
+  width: 550px;
+}
+
+.overlay img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .imagesGrid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2.8rem;
+  }
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    h2 {
+      font-size: 2.6rem;
+    }
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0px 6px 6px #1818184d;
+  }
+
+  .overlay_inner {
+    height: auto;
+    width: 100vw;
+  }
+}

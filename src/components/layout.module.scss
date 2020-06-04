@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .header-Wrapper {
   // backface-visibility: hidden;
   // animation: slideBg 4s linear infinite 0s;
@@ -193,7 +198,7 @@
     background-color: rgba($color: #12100e, $alpha: 0.96);
     flex-direction: column;
     justify-content: space-around;
-    padding: 5.4rem 0rem;
+    padding: 4.4rem 0rem 6rem 0rem;
     padding-top: 10rem;
     align-items: center;
     transform: translateX(100%);

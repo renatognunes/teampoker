@@ -1,6 +1,3 @@
-.wrapper {
-}
-
 .content {
   top: 20px;
 }
@@ -8,12 +5,10 @@
 .header {
   grid-area: title;
   padding-bottom: 50px;
-  // padding-top: 46px;
   text-align: center;
   h1 {
     color: rgb(48, 48, 48);
     display: inline;
-    // margin: 2rem 0;
     font-size: 4rem;
     background-image: linear-gradient(
       120deg,
@@ -37,7 +32,6 @@
     "contact contact";
   align-items: center;
   gap: 20px;
-  // padding: 70px 50px;
   p {
     padding-bottom: 10px;
     color: rgb(48, 48, 48);
@@ -189,5 +183,56 @@
     background-position: right;
     border: 1px solid #9cebfd;
     box-shadow: 0px 0px 10px #ffffff48;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 24px;
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .section {
+    padding: 20px 30px;
+    grid-template-areas:
+      "title"
+      "card"
+      "text"
+      "contact";
+    justify-content: center;
+    gap: 20px;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .img {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .imgRight {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .flip-card-right {
+    grid-area: card;
+    width: calc(500px / 1.5);
+    height: calc(252px / 1.5);
+  }
+
+  .flip-card {
+    width: calc(500px / 1.5);
+    height: calc(252px / 1.5);
+  }
+
+  .button {
+    margin-top: 16px;
+    padding: 15px 20px;
+    font-size: 1.8rem;
+    word-spacing: 3px;
   }
 }

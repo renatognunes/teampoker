@@ -62,32 +62,17 @@ const ServicesPage = () => {
           <div className={ServicesStyles.header}>
             <h1>LIVE POKER ROOM SOFTWARE</h1>
           </div>
-          {/* <div className={ServicesStyles.img} style={{ position: "relative" }}>
-            <Img
-              objectFit="cover"
-              imgStyle={{
-                // borderRadius: "10px 10px 0px 0px",
-                objectFit: "contain",
-              }}
-              fluid={data.image2.childImageSharp.fluid}
-              alt=""
-            /> */}
-          {/* <div className={ServicesStyles.overlay}></div> */}
-          {/* </div> */}
-
           <div class={ServicesStyles.flipCard}>
             <div class={ServicesStyles.flipCardInner}>
               <div class={ServicesStyles.flipCardFront}>
                 <Img
                   objectFit="cover"
                   imgStyle={{
-                    // borderRadius: "10px 10px 0px 0px",
                     objectFit: "contain",
                   }}
                   fluid={data.image2.childImageSharp.fluid}
                   alt=""
                 />
-                {/* <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> */}
               </div>
               <div class={ServicesStyles.flipCardBack}>
                 <h1>LIVE POKER ROOM SOFTWARE</h1>
@@ -96,7 +81,6 @@ const ServicesPage = () => {
                   internal LIVE Poker Rooms now through our existing tournament
                   software Partners.
                 </p>
-                {/* <p>We love that guy</p> */}
               </div>
             </div>
           </div>
@@ -147,13 +131,11 @@ const ServicesPage = () => {
                 <Img
                   objectFit="cover"
                   imgStyle={{
-                    // borderRadius: "10px 10px 0px 0px",
                     objectFit: "contain",
                   }}
                   fluid={data.image3.childImageSharp.fluid}
                   alt=""
                 />
-                {/* <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> */}
               </div>
               <div class={ServicesStyles.flipCardBack}>
                 <h1>ONLINE POKER ROOMS</h1>
@@ -162,26 +144,9 @@ const ServicesPage = () => {
                   TeamPoker® System in their Rooms. Contact us about
                   Requirements and licensing.
                 </p>
-                {/* <p>We love that guy</p> */}
               </div>
             </div>
           </div>
-
-          {/* <div
-            className={ServicesStyles.imgRight}
-            style={{ position: "relative" }}
-          >
-            <Img
-              objectFit="cover"
-              imgStyle={{
-                objectFit: "contain",
-                // borderRadius: "10px 10px 0px 0px",
-              }}
-              fluid={data.image3.childImageSharp.fluid}
-              alt=""
-            /> */}
-          {/* <div className={ServicesStyles.overlay}></div> */}
-          {/* </div> */}
           <div className={ServicesStyles.textLeft}>
             <p>
               We are looking to Partner with Online Poker Rooms that can fully
@@ -219,13 +184,11 @@ const ServicesPage = () => {
                 <Img
                   objectFit="cover"
                   imgStyle={{
-                    // borderRadius: "10px 10px 0px 0px",
                     objectFit: "contain",
                   }}
                   fluid={data.image1.childImageSharp.fluid}
                   alt=""
                 />
-                {/* <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> */}
               </div>
               <div class={ServicesStyles.flipCardBack}>
                 <h1>CHAMPIONSHIP LICENSES</h1>
@@ -234,23 +197,9 @@ const ServicesPage = () => {
                   in support of The WORLD POKER TEAM CHAMPIONSHIP™ - Annual
                   Series.
                 </p>
-                {/* <p>We love that guy</p> */}
               </div>
             </div>
           </div>
-          {/* <div className={ServicesStyles.img} style={{ position: "relative" }}>
-            <Img
-              objectFit="cover"
-              imgStyle={{
-                // borderRadius: "10px 10px 0px 0px",
-                // border: "4px solid white",
-                objectFit: "contain",
-              }}
-              fluid={data.image1.childImageSharp.fluid}
-              alt=""
-            /> */}
-          {/* <div className={ServicesStyles.overlay}></div> */}
-          {/* </div> */}
           <div className={ServicesStyles.text}>
             <p>
               We also are looking for partners for both LIVE and ONLINE poker
@@ -276,11 +225,6 @@ const ServicesPage = () => {
             </button>
           </div>
         </div>
-        {/* <div className={ServicesStyles.contact}>
-          <button className={ServicesStyles.button}>
-            Contact us for Linceses
-          </button>
-        </div> */}
       </div>
       <Footer />
     </>

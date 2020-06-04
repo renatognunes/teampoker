@@ -14,23 +14,23 @@ const About = props => {
 
   const data = useStaticQuery(graphql`
     query {
-      logo1: file(relativePath: { eq: "national-team-event.jpg" }) {
+      logo1: file(relativePath: { eq: "seating.png" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      logo2: file(relativePath: { eq: "score-system-tp.jpg" }) {
+      logo2: file(relativePath: { eq: "score-system-image.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      logo3: file(relativePath: { eq: "hand-cap-tp.jpeg" }) {
+      logo3: file(relativePath: { eq: "handicap-image.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 640, quality: 100) {
+          fluid(maxWidth: 740, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -42,7 +42,7 @@ const About = props => {
     <>
       <Header
         buttonText=""
-        image="aboutusbg.jpg"
+        image="about-background.jpg"
         text={<span>ABOUT US</span>}
         hideButton={true}
         padding={0}
@@ -63,6 +63,7 @@ const About = props => {
               <div
                 className={classNames(AboutStyles.overlay, AboutStyles.color1)}
               ></div>
+
               <Img
                 imgStyle={{}}
                 fluid={data.logo2.childImageSharp.fluid}
@@ -116,7 +117,12 @@ const About = props => {
               </p>
             </div>
           </div>
-          <div className={AboutStyles.container}>
+          <div
+            className={classNames(
+              AboutStyles.container,
+              AboutStyles.middleContainer
+            )}
+          >
             <div className={AboutStyles.details}>
               <h1>TeamPoker® Seating Protocol</h1>
               <p>
@@ -205,12 +211,26 @@ const About = props => {
                 </span>
               </p>
               <p>
+                <span className={AboutStyles.bold}>CLASS TEAMS:</span> The{" "}
+                <span className={AboutStyles.bold}>TP Handicap</span> system
+                allows large{" "}
+                <span className={AboutStyles.bold}>“CLASS TEAMS”</span> of
+                varying size to compete as well in the same Tournament.
+                Countries, Universities, or Women Versus Men as example can
+                compete in the same event and overlay the basic Individual
+                and/or Team Structure. Also,{" "}
+                <span className={AboutStyles.bold}>
+                  this patented Team Gaming System can be used for eSports.
+                </span>
+              </p>
+              <p>
                 <span className={AboutStyles.bold}>
                   {" "}
                   The TeamPoker® Handicap and Scoring System is the new paradigm
-                  in tournament poker where Individuals and Teams can handicap
-                  their skills (Reverse Handicap) and compete for larger portion
-                  of the prize pool.
+                  in tournament poker and gaming events where Individuals,
+                  Teams, and Class Teams can handicap their skills (Reverse
+                  Handicap) and compete for larger portion of glory and prize
+                  pool.
                 </span>
               </p>
             </div>

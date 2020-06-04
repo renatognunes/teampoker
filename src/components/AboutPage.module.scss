@@ -23,13 +23,11 @@
 }
 
 .title {
-  // padding-bottom: 46px;
   padding-top: 60px;
   text-align: center;
   h1 {
     color: rgb(48, 48, 48);
     display: inline;
-    // margin: 2rem 0;
     font-size: 4rem;
     background-image: linear-gradient(
       120deg,
@@ -45,39 +43,31 @@
 }
 
 .container {
-  // min-height: 310px;
-  // max-height: 640px;
-  // background: #eeeeee;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // border: 1px solid red;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .content {
-  // margin: 50px 0px;
   margin-bottom: 50px;
 }
 
 .container .image {
   position: relative;
-  // z-index: 1;
-  // display: flex;
-  // border: 1px solid red;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 0;
   height: 100%;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .color1 {
-  background-image: linear-gradient(#2977b8);
+  background-image: linear-gradient(#1f51ad);
 }
 
 .color2 {
@@ -90,20 +80,20 @@
 
 .container .details {
   position: relative;
-  // border: 1px solid rgb(233, 233, 233);
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
   height: 100%;
 
   h1 {
     color: rgb(48, 48, 48);
-    // margin: 2rem 0;
     display: inline-block;
-    // margin-top: 2rem;
     font-size: 3.6rem;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #1d1d1de1;
     margin-bottom: 16px;
     font-weight: 300;
@@ -116,8 +106,6 @@
 
 .container .rightDetails {
   height: 100%;
-  // padding: 0px;
-  // margin: 0px;
   background-image: linear-gradient(rgb(48, 48, 48));
   p,
   h1 {
@@ -128,7 +116,6 @@
 .contact {
   text-align: center;
   margin: 60px auto 70px auto;
-  // height: 100px;
 }
 
 .button {
@@ -151,12 +138,6 @@
     box-shadow: 0px 0px 10px #ffffff48;
   }
 }
-// h1 {
-//   color: rgb(48, 48, 48);
-//   display: inline;
-//   // margin: 2rem 0;
-//   font-size: 4rem;
-// }
 
 @media screen and (min-width: 1300px) {
   .container .details {
@@ -168,6 +149,37 @@
 
 @media screen and (min-width: 1600px) {
   .container .details {
+    p {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .middleContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    .image {
+      width: 100%;
+    }
+  }
+
+  .container .details {
+    padding: 10px 20px;
+  }
+
+  .title {
+    padding-top: 60px;
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .headline,
+  .headlinetop {
     p {
       font-size: 2.4rem;
     }
