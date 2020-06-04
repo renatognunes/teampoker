@@ -26,19 +26,13 @@ const Contact = props => {
   const { register, handleSubmit } = useForm()
   const onSubmit = async data => {
     const { name, email, phone, subject, message } = data
-    const res = await axios.post(
-      "https://server-tp.herokuapp.com/",
-      {
-        name,
-        email,
-        phone,
-        subject,
-        message,
-      },
-      {
-        headers: { "Content-Type": undefined },
-      }
-    )
+    const res = await axios.post("https://server-tp.herokuapp.com/", {
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    })
     if (res.status === 200) {
       console.log(res)
       setState({
