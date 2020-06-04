@@ -26,7 +26,7 @@ const Contact = props => {
   const { register, handleSubmit } = useForm()
   const onSubmit = async data => {
     const { name, email, phone, subject, message } = data
-    const res = await axios.post("https://server-tp.herokuapp.com/", {
+    const res = await axios.post("https://server-tp.herokuapp.com/api/form", {
       name,
       email,
       phone,
