@@ -1,6 +1,6 @@
 import React from "react"
 import contentStyles from "./content.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Image = () => {
@@ -37,7 +37,11 @@ const content = props => {
             Team Poker® Handicapping System.
           </p> */}
           {!props.hideButton && (
-            <button className={contentStyles.button}>{props.buttonText}</button>
+            <Link to="/contact">
+              <button className={contentStyles.button}>
+                {props.buttonText}
+              </button>
+            </Link>
           )}
           {/* <button className={contentStyles.button}>How it works</button> */}
         </div>

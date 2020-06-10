@@ -5,6 +5,8 @@ import Header from "../components/navbar"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 // import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -15,6 +17,12 @@ library.add(fab, faCheckSquare, faCoffee)
 
 const FAQ = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>FAQ</title>
+      <link rel="canonical" href="http://teampoker.com/faq" />
+    </Helmet>
+    <SEO title="FAQ" />
     <Header />
     <div className={faqStyles.header}>
       <h1> Frequently Asked Questions (FAQ)</h1>

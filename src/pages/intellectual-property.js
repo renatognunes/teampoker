@@ -5,6 +5,8 @@ import Header from "../components/navbar"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 // import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -15,6 +17,12 @@ library.add(fab, faCheckSquare, faCoffee)
 
 const IntellectualProperty = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Intellectual Property</title>
+      <link rel="canonical" href="http://teampoker.com/intellectual-property" />
+    </Helmet>
+    <SEO title="Intellectual Property" />
     <Header />
     <div className={propertyStyles.header}>
       <h1>INTELLECTUAL PROPERTY</h1>

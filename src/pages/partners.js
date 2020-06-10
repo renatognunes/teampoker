@@ -7,6 +7,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 const Partners = props => {
   const data = useStaticQuery(graphql`
@@ -37,6 +39,12 @@ const Partners = props => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Partners</title>
+        <link rel="canonical" href="http://teampoker.com/partners" />
+      </Helmet>
+      <SEO title="Partners" />
       <Header
         buttonText="Become a Partner"
         image="partners-bg.jpg"
@@ -144,7 +152,9 @@ const Partners = props => {
         </div>
 
         <div className={PartnersStyles.bottom}>
-          <button className={PartnersStyles.button}>Become a Partner</button>
+          <Link to="/contact">
+            <button className={PartnersStyles.button}>Become a Partner</button>
+          </Link>
         </div>
       </div>
       <Footer />

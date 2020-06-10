@@ -10,11 +10,19 @@ import "../styles/global.scss"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 library.add(fab, faCheckSquare, faCoffee)
 
 const PrivacyPolicy = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Privacy Policy</title>
+      <link rel="canonical" href="http://teampoker.com/privacy-policy" />
+    </Helmet>
+    <SEO title="Privacy Policy" />
     <Header />
     <div className={privacyStyles.header}>
       <h1>PRIVACY POLICY</h1>

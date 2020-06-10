@@ -8,6 +8,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 const About = props => {
   let className = classNames(AboutStyles.overlay, AboutStyles.color1)
@@ -21,7 +23,7 @@ const About = props => {
           }
         }
       }
-      logo2: file(relativePath: { eq: "score-system-image.jpg" }) {
+      logo2: file(relativePath: { eq: "score-system-image-championship.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -40,6 +42,12 @@ const About = props => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About</title>
+        <link rel="canonical" href="http://teampoker.com/about" />
+      </Helmet>
+      <SEO title="About" />
       <Header
         buttonText=""
         image="about-background.jpg"
@@ -240,7 +248,7 @@ const About = props => {
           <p>Help us make Poker a Team Sport!</p>
         </div>
         <div className={AboutStyles.contact}>
-          <Link to="#" className={AboutStyles.button}>
+          <Link to="/contact" className={AboutStyles.button}>
             Contact Us to Learn More
           </Link>
         </div>

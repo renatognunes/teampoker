@@ -7,6 +7,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
+import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 // import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -44,6 +46,12 @@ const ServicesPage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Services</title>
+        <link rel="canonical" href="http://teampoker.com/services" />
+      </Helmet>
+      <SEO title="Services" />
       <Header
         image="pokerbg.jpg"
         hideButton={true}
@@ -111,9 +119,11 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className={ServicesStyles.contact}>
-            <button className={ServicesStyles.button}>
-              Contact us for Poker Room Software
-            </button>
+            <Link to="/contact">
+              <button className={ServicesStyles.button}>
+                Contact us for Poker Room Software
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -167,9 +177,11 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className={ServicesStyles.contact}>
-            <button className={ServicesStyles.button}>
-              Contact us for Online Poker Rooms
-            </button>
+            <Link to="/contact">
+              <button className={ServicesStyles.button}>
+                Contact us for Online Poker Rooms
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -220,9 +232,11 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className={ServicesStyles.contact}>
-            <button className={ServicesStyles.button}>
-              Contact us for Licenses
-            </button>
+            <Link to="/contact">
+              <button className={ServicesStyles.button}>
+                Contact us for Licenses
+              </button>
+            </Link>
           </div>
         </div>
       </div>
