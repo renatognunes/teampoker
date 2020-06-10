@@ -48,7 +48,7 @@ const Gallery = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Gallery</title>
-        <link rel="canonical" href="http://teampoker.com/gallery" />
+        <link rel="canonical" href="https://teampoker.com/gallery" />
       </Helmet>
       <SEO title="Gallery" />
       <Header

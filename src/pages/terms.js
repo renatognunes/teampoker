@@ -20,7 +20,7 @@ const Terms = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Terms & Conditions</title>
-      <link rel="canonical" href="http://teampoker.com/terms" />
+      <link rel="canonical" href="https://teampoker.com/terms" />
     </Helmet>
     <SEO title="Terms & Conditions" />
     <Header />

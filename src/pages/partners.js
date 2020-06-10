@@ -42,7 +42,7 @@ const Partners = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Partners</title>
-        <link rel="canonical" href="http://teampoker.com/partners" />
+        <link rel="canonical" href="https://teampoker.com/partners" />
       </Helmet>
       <SEO title="Partners" />
       <Header
@@ -51,6 +51,7 @@ const Partners = props => {
         text={<span>OUR PARTNERS</span>}
         hideButton={false}
         padding={0}
+        url="/contact"
       />
       <div className={PartnersStyles.wrapper}>
         <div className={PartnersStyles.headline_bottom}>

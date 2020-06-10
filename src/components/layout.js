@@ -23,7 +23,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header text="WE MAKE POKER A TEAM SPORT" buttonText="How It Works" />
+      <Header
+        text="WE MAKE POKER A TEAM SPORT"
+        buttonText="How It Works"
+        url="/about"
+      />
       <Services />
       <About />
       <Clients />

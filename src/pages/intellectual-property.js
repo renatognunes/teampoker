@@ -20,7 +20,10 @@ const IntellectualProperty = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Intellectual Property</title>
-      <link rel="canonical" href="http://teampoker.com/intellectual-property" />
+      <link
+        rel="canonical"
+        href="https://teampoker.com/intellectual-property"
+      />
     </Helmet>
     <SEO title="Intellectual Property" />
     <Header />

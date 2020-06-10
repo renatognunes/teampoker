@@ -37,7 +37,7 @@ const content = props => {
             Team Poker® Handicapping System.
           </p> */}
           {!props.hideButton && (
-            <Link to="/contact">
+            <Link to={props.url}>
               <button className={contentStyles.button}>
                 {props.buttonText}
               </button>

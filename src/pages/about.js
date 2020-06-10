@@ -45,7 +45,7 @@ const About = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>About</title>
-        <link rel="canonical" href="http://teampoker.com/about" />
+        <link rel="canonical" href="https://teampoker.com/about" />
       </Helmet>
       <SEO title="About" />
       <Header

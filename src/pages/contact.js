@@ -67,7 +67,7 @@ const Contact = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Contact</title>
-        <link rel="canonical" href="http://teampoker.com/contact" />
+        <link rel="canonical" href="https://teampoker.com/contact" />
       </Helmet>
       <SEO title="Contact" />
       <ToastContainer

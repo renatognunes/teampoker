@@ -49,7 +49,7 @@ const ServicesPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Services</title>
-        <link rel="canonical" href="http://teampoker.com/services" />
+        <link rel="canonical" href="https://teampoker.com/services" />
       </Helmet>
       <SEO title="Services" />
       <Header

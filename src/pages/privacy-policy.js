@@ -20,7 +20,7 @@ const PrivacyPolicy = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Privacy Policy</title>
-      <link rel="canonical" href="http://teampoker.com/privacy-policy" />
+      <link rel="canonical" href="https://teampoker.com/privacy-policy" />
     </Helmet>
     <SEO title="Privacy Policy" />
     <Header />

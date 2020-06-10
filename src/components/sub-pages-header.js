@@ -98,6 +98,7 @@ const Header = props => {
         </div>
       </nav>
       <Content
+        url={props.url}
         buttonText={props.buttonText}
         text={props.text}
         hideButton={props.hideButton}

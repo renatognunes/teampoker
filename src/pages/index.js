@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>TeamPoker®</title>
-      <link rel="canonical" href="http://teampoker.com" />
+      <link rel="canonical" href="https://teampoker.com" />
     </Helmet>
     <SEO title="Home" />
     <Layout />

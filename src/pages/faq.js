@@ -20,7 +20,7 @@ const FAQ = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>FAQ</title>
-      <link rel="canonical" href="http://teampoker.com/faq" />
+      <link rel="canonical" href="https://teampoker.com/faq" />
     </Helmet>
     <SEO title="FAQ" />
     <Header />

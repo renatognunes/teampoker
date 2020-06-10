@@ -101,6 +101,7 @@ const Header = props => {
         text={props.text}
         hideButton={false}
         buttonText={props.buttonText}
+        url={props.url}
       />
       {/* </BackgroundSlider> */}
     </div>
