@@ -22,7 +22,7 @@ const FAQ = () => (
       <title>FAQ</title>
       <link rel="canonical" href="https://teampoker.com/faq" />
     </Helmet>
-    <SEO title="FAQ" />
+    <SEO title="FAQ" description="Frequently Asked Questions" />
     <Header />
     <div className={faqStyles.header}>
       <h1> Frequently Asked Questions (FAQ)</h1>

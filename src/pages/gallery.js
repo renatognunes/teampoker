@@ -50,7 +50,7 @@ const Gallery = props => {
         <title>Gallery</title>
         <link rel="canonical" href="https://teampoker.com/gallery" />
       </Helmet>
-      <SEO title="Gallery" />
+      <SEO title="Gallery" description="TeamPoker® event's Gallery" />
       <Header
         image="gallery-bg.jpg"
         text={<span>GALLERY</span>}

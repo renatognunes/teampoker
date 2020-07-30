@@ -25,7 +25,7 @@ const IntellectualProperty = () => (
         href="https://teampoker.com/intellectual-property"
       />
     </Helmet>
-    <SEO title="Intellectual Property" />
+    <SEO title="Intellectual Property" description="Intellectual Property" />
     <Header />
     <div className={propertyStyles.header}>
       <h1>INTELLECTUAL PROPERTY</h1>

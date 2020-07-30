@@ -22,7 +22,7 @@ const Terms = () => (
       <title>Terms & Conditions</title>
       <link rel="canonical" href="https://teampoker.com/terms" />
     </Helmet>
-    <SEO title="Terms & Conditions" />
+    <SEO title="Terms & Conditions" terms="Terms and Conditions" />
     <Header />
     <div className={termsStyles.header}>
       <h1>Terms & Conditions</h1>

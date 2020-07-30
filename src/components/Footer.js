@@ -22,7 +22,9 @@ const Footer = () => {
             <Link to="/faq">FAQ</Link>
             <Link to="/terms">Terms</Link>
             <Link to="/intellectual-property">Intellectual Property</Link>
-            <a>Charity Tool (prototype)</a>
+            <a href="https://www.playteampoker.com/" target="_blank">
+              Play TeamPoker® Online (beta)
+            </a>
           </div>
         </div>
         <div className={FooterStyles.contact}>

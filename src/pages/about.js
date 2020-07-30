@@ -47,7 +47,10 @@ const About = props => {
         <title>About</title>
         <link rel="canonical" href="https://teampoker.com/about" />
       </Helmet>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description="TeamPoker® is “The Patented Card Game Process” for the Tournament Poker Team Sports Model."
+      />
       <Header
         buttonText=""
         image="about-background.jpg"

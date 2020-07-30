@@ -69,7 +69,10 @@ const Contact = props => {
         <title>Contact</title>
         <link rel="canonical" href="https://teampoker.com/contact" />
       </Helmet>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description="Contact us for licenses, partnerships and live poker room software systems."
+      />
       <ToastContainer
         position="top-center"
         autoClose={3000}

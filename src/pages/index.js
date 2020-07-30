@@ -20,7 +20,10 @@ const IndexPage = () => (
       <title>TeamPoker®</title>
       <link rel="canonical" href="https://teampoker.com" />
     </Helmet>
-    <SEO title="Home" />
+    <SEO
+      title="TeamPoker®"
+      description="TeamPoker® is “The Patented Card Game Process” for the Tournament Poker Team Sports Model."
+    />
     <Layout />
   </>
 )

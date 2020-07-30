@@ -44,7 +44,10 @@ const Partners = props => {
         <title>Partners</title>
         <link rel="canonical" href="https://teampoker.com/partners" />
       </Helmet>
-      <SEO title="Partners" />
+      <SEO
+        title="Partners"
+        description="Become a Team Poker® Partner and join the Poker Sports Model where both Individuals and Teams compete for cash, glory and fame!"
+      />
       <Header
         buttonText="Become a Partner"
         image="partners-bg.jpg"

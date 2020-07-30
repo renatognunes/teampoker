@@ -51,7 +51,10 @@ const ServicesPage = () => {
         <title>Services</title>
         <link rel="canonical" href="https://teampoker.com/services" />
       </Helmet>
-      <SEO title="Services" />
+      <SEO
+        title="Services"
+        description="TeamPoker® provides Live Poker Room Software, Online Poker Rooms, and Championship licenses."
+      />
       <Header
         image="pokerbg.jpg"
         hideButton={true}
