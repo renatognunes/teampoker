@@ -1,0 +1,24 @@
+.container {
+  margin-bottom: 60px;
+  margin-top: 30px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.blogWrapper {
+  padding: 20px;
+  text-align: left;
+  background: #eeeeee;
+  margin: 20px 40px;
+  h2 {
+    color: #292929;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  span {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #858585;
+  }
+}

@@ -10,6 +10,7 @@
     "npm": "6.14.5"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
@@ -35,6 +36,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^5.7.2",
+    "react-share": "^4.2.1",
     "react-spring": "^8.0.27",
     "react-toastify": "^6.0.5",
     "resize-observer-polyfill": "^1.5.1"
