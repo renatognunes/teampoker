@@ -42,20 +42,14 @@ const Header = props => {
         transition={2} // transition duration between images
         duration={4} // how long an image is shown
         // specify images to include (and their order) according to `relativePath`
-        images={["foto3.jpg", "foto4.jpg", "foto.jpg"]}
+        images={["home-1.jpg", "home-2.jpg", "home-3.jpg"]}
         // pass down standard element props
         style={{
           maxHeight: "550px",
           width: "100%",
           backgroundRepeat: "no-repeat",
-          // opacity: 0.5,
-          // backgroundColor: "black",
-          // backgroundSize: "cover",
-          // background: "blue",
           backgroundPosition: "top",
-          // top: 0,
           zIndex: -1,
-          // transform: "rotate(-2deg) scale(.9)",
         }}
       ></BackgroundSlider>
       <nav className={layoutStyles.header}>
@@ -103,7 +97,6 @@ const Header = props => {
         buttonText={props.buttonText}
         url={props.url}
       />
-      {/* </BackgroundSlider> */}
     </div>
   )
 }

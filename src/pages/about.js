@@ -16,21 +16,21 @@ const About = props => {
 
   const data = useStaticQuery(graphql`
     query {
-      logo1: file(relativePath: { eq: "seating.png" }) {
+      logo1: file(relativePath: { eq: "about-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      logo2: file(relativePath: { eq: "score-system-image-championship.jpg" }) {
+      logo2: file(relativePath: { eq: "about-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 640, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      logo3: file(relativePath: { eq: "handicap-image.jpg" }) {
+      logo3: file(relativePath: { eq: "about-3.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 740, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -53,7 +53,7 @@ const About = props => {
       />
       <Header
         buttonText=""
-        image="about-background.jpg"
+        image="about-bg.jpg"
         text={<span>ABOUT US</span>}
         hideButton={true}
         padding={0}
@@ -78,7 +78,7 @@ const About = props => {
               <Img
                 imgStyle={{}}
                 fluid={data.logo2.childImageSharp.fluid}
-                alt=""
+                alt="Score System"
               />
             </div>
             <div
@@ -177,7 +177,7 @@ const About = props => {
                 style={{}}
                 imgStyle={{}}
                 fluid={data.logo1.childImageSharp.fluid}
-                alt=""
+                alt="Seating Protocol"
               />
             </div>
           </div>
@@ -190,7 +190,7 @@ const About = props => {
                 style={{}}
                 imgStyle={{}}
                 fluid={data.logo3.childImageSharp.fluid}
-                alt=""
+                alt="Handicap"
               />
             </div>
             <div

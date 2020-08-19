@@ -37,94 +37,39 @@ const Clients = () => {
           <h1>Our Partners</h1>
         </div>
         <div className={ClientsStyles.container}>
-          {/* <div> */}
-          {/* <div> */}
-          {/* <div style={{ position: "relative" }}> */}
           <Link to="/partners#casinoware">
             <Img
               style={{ width: 280 }}
-              // objectFit="cover"
               imgStyle={{
                 width: 280,
                 flexGrow: 1,
-                // borderRadius: "10px 10px 0px 0px",
-                // objectFit: "contain",
               }}
               fluid={data.logo1.childImageSharp.fluid}
-              alt=""
+              alt="CasinoWare Logo"
             />
           </Link>
-          {/* <div className={ClientsStyles.overlay}></div> */}
-          {/* </div> */}
-          {/* <h1>POKER ROOM SOFTWARE</h1>
-            <p>
-              TeamPoker®{" "}
-              <a href="https://www.casinoware.net/" target="_blank">
-                CasinoWare
-              </a>{" "}
-              Poker Room Software is free for up to 3 tables and 100 players.
-              The license is always free for small poker rooms, 501c3 charities,
-              and sports team fundraisers.
-            </p> */}
-          {/* <div className={ClientsStyles.overlay}></div> */}
-          {/* </div> */}
-          {/* <div className={ClientsStyles.overlay}></div> */}
-          {/* <div> */}
-          {/* <h1>POKER ROOMS</h1> */}
-          {/* <div> */}
           <Link to="/partners#apt">
             <Img
               style={{ width: 280 }}
-              // objectFit="cover"
               imgStyle={{
                 width: 280,
                 flexGrow: 1,
-                // objectFit: "contain",
-                // borderRadius: "10px 10px 0px 0px",
               }}
               fluid={data.logo2.childImageSharp.fluid}
-              alt=""
+              alt="APT Live Logo"
             />
           </Link>
-          {/* <div className={ClientsStyles.overlay}></div> */}
-          {/* </div> */}
-          {/* <h1>POKER ROOMS</h1>
-            <p>
-              Casinos can purchase the TeamPoker® process for their room for an
-              additional $30/month to the CasinoWare basic system fee.{" "}
-              <a href="https://www.casinoware.net/" target="_blank">
-                CasinoWare
-              </a>{" "}
-              is the most professional poker room software available.
-            </p> */}
-          {/* </div> */}
-          {/* <div> */}
-          {/* <div> */}
           <Link to="/partners#checkraise">
             <Img
-              // objectFit="cover"
               style={{ width: 280 }}
               imgStyle={{
                 width: 280,
                 flexGrow: 1,
-                // borderRadius: "10px 10px 0px 0px",
-                // border: "4px solid white",
-                // objectFit: "contain",
               }}
               fluid={data.logo3.childImageSharp.fluid}
-              alt=""
+              alt="Check Raise Logo"
             />
           </Link>
-          {/* <div className={ClientsStyles.overlay}></div> */}
-          {/* </div> */}
-          {/* <h1>CHAMPIONSHIP LICENSES</h1>
-            <p>
-              TeamPoker® Championship Licenses can be purchased directly with
-              TeamPoker LLC. We are looking for casinos that want to host
-              TeamPoker® Championships for their City, State, or Country.
-            </p> */}
-          {/* </div> */}
-          {/* </div> */}
         </div>
       </div>
     </div>

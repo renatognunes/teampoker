@@ -59,7 +59,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      {/* </BackgroundSlider> */}
     </div>
   )
 }

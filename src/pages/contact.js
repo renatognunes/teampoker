@@ -86,7 +86,7 @@ const Contact = props => {
         style={{ fontSize: 22 }}
       />
       <Header
-        image="contact.jpg"
+        image="contact-bg.jpg"
         text={<span>CONTACT US</span>}
         hideButton={true}
         padding={0}

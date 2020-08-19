@@ -9,38 +9,9 @@ html {
   overflow-x: hidden;
 }
 
-.header-Wrapper {
-  // backface-visibility: hidden;
-  // animation: slideBg 4s linear infinite 0s;
-  // animation-timing-function: ease-in-out;
-  // transition: ease-in-out;
-  // transition: ease-in-out 2s;
-  // z-index: -2;
-  // background: linear-gradient(340deg, #131f30 0%, #131a25 74%);
-
-  // z-index: 0.5;
-  // opacity($color: #000000);
-  // background-color: rgba($color: #000000, $alpha: 0);
-  // width: 100%;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // animation-direction: alternate;
-  // -webkit-animation: slideBg 4s ease-in-out;
-  // -webkit-animation: slideBg 5s infinite;
-  // transition: 5s all ease-in-out;
-  // animation-name: slideBg;
-  // animation-timing-function: ease-in-out;
-  // animation-duration: 5s;
-  // animation-fill-mode: forwards;
-  // animation-iteration-count: infinite;
-  // animation-play-state: running;
-}
-
 .backgroundWrapper {
   background: #29292993;
   transition: none !important;
-  // opacity: 0.6;
-  // opacity: 0.7;
   z-index: 0;
   position: absolute;
   height: 550px;
@@ -51,27 +22,11 @@ html {
   background: linear-gradient(340deg, #131f30 0%, #131a25 74%);
   transition: none !important;
   opacity: 1;
-  // opacity: 0.7;
   z-index: -2;
   position: absolute;
   height: 550px;
   width: 100%;
 }
-
-// @keyframes slideBg {
-//   0% {
-//     background-image: url("../images/cover.png"),
-//       linear-gradient(340deg, #131f30 0%, #131a25 74%);
-//   }
-//   50% {
-//     background-image: url("../images/cover4.png"),
-//       linear-gradient(340deg, #131f30 0%, #131a25 74%);
-//   }
-//   100% {
-//     background-image: url("../images/cover2.png"),
-//       linear-gradient(340deg, #131f30 0%, #131a25 74%);
-//   }
-// }
 
 .header {
   display: flex;

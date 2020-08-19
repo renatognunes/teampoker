@@ -20,21 +20,21 @@ library.add(fab, faCheckSquare, faCoffee)
 const ServicesPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "services9.jpg" }) {
+      image1: file(relativePath: { eq: "home-services-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image2: file(relativePath: { eq: "services7.jpg" }) {
+      image2: file(relativePath: { eq: "home-services-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image3: file(relativePath: { eq: "services10.jpg" }) {
+      image3: file(relativePath: { eq: "home-services-3.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -56,7 +56,7 @@ const ServicesPage = () => {
         description="TeamPoker® provides Live Poker Room Software, Online Poker Rooms, and Championship licenses."
       />
       <Header
-        image="pokerbg.jpg"
+        image="services-bg.jpg"
         hideButton={true}
         padding={50}
         text={
@@ -81,8 +81,8 @@ const ServicesPage = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image2.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image1.childImageSharp.fluid}
+                  alt="Live Poker Room"
                 />
               </div>
               <div class={ServicesStyles.flipCardBack}>
@@ -146,8 +146,8 @@ const ServicesPage = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image3.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image2.childImageSharp.fluid}
+                  alt="Online Poker Room"
                 />
               </div>
               <div class={ServicesStyles.flipCardBack}>
@@ -201,8 +201,8 @@ const ServicesPage = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image1.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image3.childImageSharp.fluid}
+                  alt="Championship Licenses"
                 />
               </div>
               <div class={ServicesStyles.flipCardBack}>

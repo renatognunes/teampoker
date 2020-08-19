@@ -50,12 +50,8 @@ const Header = props => {
           backgroundRepeat: "no-repeat",
           opacity: 0.5,
           backgroundColor: "black",
-          // backgroundSize: "cover",
-          // background: "blue",
           backgroundPosition: "top",
-          // top: 0,
           zIndex: -1,
-          // transform: "rotate(-2deg) scale(.9)",
         }}
       ></BackgroundSlider>
       <nav className={layoutStyles.header}>
@@ -104,7 +100,6 @@ const Header = props => {
         hideButton={props.hideButton}
         paddingHeader={props.padding}
       />
-      {/* </BackgroundSlider> */}
     </div>
   )
 }

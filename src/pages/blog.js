@@ -35,7 +35,7 @@ const Blog = props => {
       </Helmet>
       <SEO title="Blog" description="TeamPoker® Official Blog" />
       <Header
-        image="blog-post-bg.jpg"
+        image="blog-bg.jpg"
         text={<span>LATEST POKER NEWS</span>}
         hideButton={true}
         padding={0}

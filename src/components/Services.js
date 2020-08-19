@@ -6,21 +6,21 @@ import ServicesStyles from "./Services.module.scss"
 const Services = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "services9.jpg" }) {
+      image1: file(relativePath: { eq: "home-services-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image2: file(relativePath: { eq: "services7.jpg" }) {
+      image2: file(relativePath: { eq: "home-services-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image3: file(relativePath: { eq: "services10.jpg" }) {
+      image3: file(relativePath: { eq: "home-services-3.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 540, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -45,8 +45,8 @@ const Services = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image2.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image1.childImageSharp.fluid}
+                  alt="Live Poker Room"
                 />
               </div>
               <h1>LIVE POKER ROOM SOFTWARE</h1>
@@ -65,8 +65,8 @@ const Services = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image3.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image2.childImageSharp.fluid}
+                  alt="Online Poker Room"
                 />
               </div>
               <h1>ONLINE POKER ROOMS</h1>
@@ -85,8 +85,8 @@ const Services = () => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  fluid={data.image1.childImageSharp.fluid}
-                  alt=""
+                  fluid={data.image3.childImageSharp.fluid}
+                  alt="Championship Licenses"
                 />
               </div>
               <h1>CHAMPIONSHIP LICENSES</h1>

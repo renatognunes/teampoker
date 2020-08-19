@@ -1,36 +1,17 @@
-.wrapper {
-  // margin-top: 100px;
-  // margin-bottom: 60px;
-}
-
 .content {
   display: flex;
   flex-direction: row;
-  // justify-content: space-around;
-  // align-content: space-between;
-  // flex-wrap: wrap;
 }
 
 .content > div {
-  // align-content: space-between;
-  // flex: 1;
   width: 50%;
-  // border: 1px solid red;
-  // flex: 1;
   min-height: 480px;
 }
 
 .aboutWrapper {
-  // flex: 1;
   display: flex;
-  // flex-direction: column;
-  // background-color: #323232;
   align-items: center;
-  // justify-content: center;
-  // justify-content: center;
   .about {
-    // border: 1px solid red;
-    // flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,17 +21,14 @@
     .headline {
       padding-top: 40px;
       color: rgb(48, 48, 48);
-      // font-family: "Roboto", sans-serif;
       font-size: 3.2rem;
       font-weight: 600;
     }
 
     h1 {
       margin: 0;
-      // margin-bottom: 40px;
       color: rgb(48, 48, 48);
       display: inline;
-      // margin: 2rem 0;
       font-size: 4rem;
       background-image: linear-gradient(
         120deg,
@@ -74,21 +52,11 @@
 }
 
 .textWrapper {
-  // flex: 1;
   background-color: #323232;
   display: flex;
-  // flex-direction: column;
   justify-content: left;
   flex-wrap: wrap;
   padding: 60px 30px;
-  // & div {
-  //   width: "200px";
-  //   // display: block;
-  //   color: #ffffff;
-  //   font-family: "Roboto", sans-serif;
-  //   font-size: 2rem;
-  //   // margin-bottom: 22px;
-  // }
 }
 
 .textWrapper > div {
@@ -96,7 +64,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // align-self: center;
   width: 50%;
   padding: 20px;
   color: #ffffff;
@@ -133,29 +100,12 @@
     flex-direction: column;
   }
   .content > div {
-    // align-content: space-between;
-    // flex: 1;
     width: 100%;
-    // border: 1px solid red;
-    // flex: 1;
-    // min-height: 480px;
   }
   .textWrapper {
-    // flex: 1;
     background-color: #323232;
     display: flex;
     flex-direction: column;
-    // justify-content: left;
-    // flex-wrap: wrap;
-    // padding: 60px 30px;
-    // & div {
-    //   width: "200px";
-    //   // display: block;
-    //   color: #ffffff;
-    //   font-family: "Roboto", sans-serif;
-    //   font-size: 2rem;
-    //   // margin-bottom: 22px;
-    // }
   }
 
   .textWrapper > div {
@@ -163,7 +113,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // align-self: center;
     width: 100%;
     padding: 20px 5px;
     color: #ffffff;

@@ -16,7 +16,6 @@ $brand-colors: (
     margin: 2rem 1.4rem !important;
     padding: 10px;
     border-radius: 25px;
-    // transition: all 300ms ease-out;
     @each $class, $color in $brand-colors {
       &.#{$class} {
         color: $color !important;

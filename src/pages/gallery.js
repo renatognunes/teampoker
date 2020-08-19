@@ -38,7 +38,6 @@ const Gallery = props => {
   `)
 
   const handleImage = e => {
-    console.log(e.target.src)
     currentSrc(e.target.src)
     changeModal(true)
   }
