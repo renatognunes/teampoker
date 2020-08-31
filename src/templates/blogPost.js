@@ -26,7 +26,6 @@ const Blog = props => {
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
-        console.log(node)
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
         return <img alt={alt} src={url} />
@@ -39,9 +38,18 @@ const Blog = props => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>{props.data.contentfulBlog.title}</title>
-        <link rel="canonical" href="https://teampoker.com/blog" />
+        <link
+          rel="canonical"
+          href={`https://teampoker.com/blog/${props.data.contentfulBlog.slug.replace(
+            /\s/g,
+            "-"
+          )}`}
+        />
       </Helmet>
-      <SEO title="Blog" description="TeamPoker® Official Blog" />
+      <SEO
+        title={props.data.contentfulBlog.title}
+        description="TeamPoker® Official Blog"
+      />
       <Header
         image="blog-bg.jpg"
         text={<span>{props.data.contentfulBlog.title}</span>}
@@ -72,7 +80,7 @@ const Blog = props => {
             title: props.data.contentfulBlog.title,
           },
         }}
-        tags={["hello"]}
+        tags={["teampoker", "poker", "casino", "pokerteam", "teampoker"]}
       />
       <Footer />
     </>
