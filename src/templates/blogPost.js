@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Header from "../components/sub-pages-header"
+import Header from "../components/navbar"
 import Footer from "../components/Footer"
 import "normalize.css"
 import styles from "../styles/blog.module.scss"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
 import Share from "../components/Share"
@@ -15,6 +16,11 @@ export const query = graphql`
       title
       date(formatString: "MMMM Do, YYYY")
       slug
+      cover {
+        fluid(maxWidth: 980, quality: 100) {
+          ...GatsbyContentfulFluid
+        }
+      }
       body {
         json
       }
@@ -50,14 +56,16 @@ const Blog = props => {
         title={props.data.contentfulBlog.title}
         description="TeamPoker® Official Blog"
       />
-      <Header
-        image="blog-bg.jpg"
-        text={<span>{props.data.contentfulBlog.title}</span>}
-        hideButton={true}
-        padding={0}
-      />
+      <Header />
       <div className={styles.blogContainer}>
         <h1>{props.data.contentfulBlog.title}</h1>
+        {props.data.contentfulBlog.cover && (
+          <Img
+            fluid={props.data.contentfulBlog.cover.fluid}
+            key={props.data.contentfulBlog.cover.fluid.src}
+            alt={props.data.contentfulBlog.cover.fluid.src}
+          />
+        )}
         <p className={styles.blogPostDate}>{props.data.contentfulBlog.date}</p>
         <div className={styles.blogPostBody}>
           {documentToReactComponents(
