@@ -6,7 +6,7 @@ import ClientsStyles from "../../styles/Clients.module.scss"
 const Clients = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo1: file(relativePath: { eq: "logo-casinoware.jpg" }) {
+      logo1: file(relativePath: { eq: "logo-southern.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -34,7 +34,7 @@ const Clients = () => {
     <div className={ClientsStyles.wrapper}>
       <div className={ClientsStyles.content}>
         <div className={ClientsStyles.header}>
-          <h1>Our Partners</h1>
+          <h1>Trusted by</h1>
         </div>
         <div className={ClientsStyles.container}>
           <Link to="/partners#casinoware">
@@ -45,7 +45,7 @@ const Clients = () => {
                 flexGrow: 1,
               }}
               fluid={data.logo1.childImageSharp.fluid}
-              alt="CasinoWare Logo"
+              alt="Southern Logo"
             />
           </Link>
           <Link to="/partners#apt">

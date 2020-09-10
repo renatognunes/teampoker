@@ -28,6 +28,13 @@ const Partners = () => {
           }
         }
       }
+      logo4: file(relativePath: { eq: "logo-southern.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -127,6 +134,38 @@ const Partners = () => {
               Visit Check Raise
             </a>
           </div>
+        </div>
+      </div>
+      <div className={PartnersStyles.headline} id="southern">
+        <p>
+          Team Poker® offers limited event licensing for single casino internal
+          LIVE Poker Rooms now through our existing tournament software
+          Partners.
+        </p>
+      </div>
+      <div className={PartnersStyles.container4}>
+        <div className={PartnersStyles.text2}>
+          <div className={PartnersStyles.header4}>
+            <h1>Southern Poker Tour</h1>
+          </div>
+          <p>
+            Southern Poker Tour was created and formed by four poker loving
+            friend looking at creating a unique experience not regularly
+            available and accessible to poker players in areas all over Southern
+            Australia.
+          </p>
+          <div className={PartnersStyles.contact}>
+            <a
+              href="https://southernpokertour.com.au/"
+              target="_blank"
+              className={PartnersStyles.button}
+            >
+              Visit Southern Poker Tour
+            </a>
+          </div>
+        </div>
+        <div className={PartnersStyles.images}>
+          <Img fluid={data.logo4.childImageSharp.fluid} alt="" />
         </div>
       </div>
 

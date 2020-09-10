@@ -8,7 +8,7 @@ import "../styles/global.scss"
 const PartnersPage = () => {
   return (
     <Layout
-      headerTitle="OUR PARTNERS"
+      headerTitle="PARTNERS & CLIENTS"
       headerButtonText="Become a Partner"
       headerURL="/contact"
       headerImages={["partners-bg.jpg"]}
@@ -16,7 +16,7 @@ const PartnersPage = () => {
       shouldShowHeaderContent
     >
       <SEO
-        title="Partners"
+        title="Partners & Clients"
         link="https://teampoker.com/partners"
         description="Become a Team Poker® Partner and join the Poker Sports Model where both Individuals and Teams compete for cash, glory and fame!"
       />
