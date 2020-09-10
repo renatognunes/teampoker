@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../layout/Layout"
 import IntellectualProperty from "../components/IntellectualProperty"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import "normalize.css"
 import "../styles/global.scss"
 

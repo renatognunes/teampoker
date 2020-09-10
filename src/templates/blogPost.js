@@ -5,7 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import "normalize.css"
 import styles from "../styles/blog.module.scss"
 import Img from "gatsby-image"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Share from "../components/Share"
 
 export const query = graphql`

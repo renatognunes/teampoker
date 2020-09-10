@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layout/Layout"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Services from "../components/Services"
 import "normalize.css"
 import "../styles/global.scss"

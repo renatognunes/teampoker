@@ -3,7 +3,7 @@ import Layout from "../layout/Layout"
 import About from "../components/About"
 import "normalize.css"
 import "../styles/global.scss"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 const AboutPage = () => {
   return (
