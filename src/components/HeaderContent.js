@@ -1,16 +1,13 @@
-import React, { useContext } from "react"
-import { LayoutContext } from "../layout/Layout"
+import React from "react"
 import contentStyles from "./content.module.scss"
 import { Link } from "gatsby"
 
-const HeaderContent = () => {
-  const {
-    headerTitle,
-    headerButtonText,
-    headerURL,
-    shouldShowHeaderButton,
-  } = useContext(LayoutContext)
-
+const HeaderContent = ({
+  headerTitle,
+  headerButtonText,
+  headerURL,
+  shouldShowHeaderButton,
+}) => {
   return (
     <div className={contentStyles.container}>
       <div>

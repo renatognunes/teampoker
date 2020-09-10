@@ -1,62 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
-import BlogStyles from "../components/BlogPage.module.scss"
-import Header from "../components/sub-pages-header"
-import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
-import Footer from "../components/Footer"
-import "normalize.css"
-import classNames from "classnames"
-import "../styles/global.scss"
+import Layout from "../layout/Layout"
+import Blog from "../components/Blog"
 import SEO from "../components/SEO"
+import "normalize.css"
+import "../styles/global.scss"
 
-const Blog = props => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulBlog(sort: { fields: date, order: DESC }) {
-        edges {
-          node {
-            title
-            slug
-            date(formatString: "MMMM Do, YYYY")
-          }
-        }
-      }
-    }
-  `)
-
+const BlogPage = () => {
   return (
-    <>
+    <Layout
+      headerTitle="LATEST POKER NEWS"
+      headerImages={["blog-bg.jpg"]}
+      shouldShowHeaderButton={false}
+      shouldShowHeaderContent
+    >
       <SEO
         title="Blog"
         link="https://teampoker.com/blog"
         description="TeamPoker® Official Blog"
       />
-      <Header
-        image="blog-bg.jpg"
-        text={<span>LATEST POKER NEWS</span>}
-        hideButton={true}
-        padding={0}
-      />
-      <div>
-        <div className={BlogStyles.container}>
-          {data.allContentfulBlog.edges.map((edge, idx) => {
-            return (
-              <Link to={`/blog/${edge.node.slug.replace(/\s/g, "-")}`}>
-                <div className={BlogStyles.blogWrapper} key={idx}>
-                  <div className={BlogStyles.header}>
-                    <h2>{edge.node.title}</h2>
-                    <span>{edge.node.date}</span>
-                  </div>
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-      <Footer />
-    </>
+      <Blog />
+    </Layout>
   )
 }
 
-export default Blog
+export default BlogPage

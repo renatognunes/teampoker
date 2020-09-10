@@ -17,6 +17,7 @@ const IndexPage = () => (
     headerTitle="WE MAKE POKER A TEAM SPORT"
     headerButtonText="How It Works"
     headerURL="/about"
+    headerImages={["home-1.jpg", "home-2.jpg", "home-3.jpg"]}
     shouldShowHeaderButton
     shouldShowHeaderContent
   >

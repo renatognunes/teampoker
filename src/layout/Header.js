@@ -1,16 +1,21 @@
 import { Link } from "gatsby"
-import React, { useContext } from "react"
-import { LayoutContext } from "./Layout"
+import React from "react"
 import layoutStyles from "../components/layout.module.scss"
 import classNames from "classnames"
 import HeaderContent from "../components/HeaderContent"
-import Image from "../components/image"
+import Logo from "../components/Logo"
 import HeaderOverlay from "../components/HeaderOverlay"
 
-const Header = () => {
+const Header = ({
+  headerTitle,
+  headerButtonText,
+  headerURL,
+  headerImages,
+  shouldShowHeaderContent,
+  shouldShowHeaderButton,
+}) => {
   const [isNavbarOpen, changeNavbar] = React.useState(false)
 
-  const { shouldShowHeaderContent } = useContext(LayoutContext)
   const inputEl = React.useRef(null)
 
   let className = classNames(layoutStyles.navBar, {
@@ -23,11 +28,13 @@ const Header = () => {
         [layoutStyles["navbar__darkmode"]]: !shouldShowHeaderContent,
       })}
     >
-      {shouldShowHeaderContent ? <HeaderOverlay /> : null}
+      {shouldShowHeaderContent ? (
+        <HeaderOverlay headerImages={headerImages} />
+      ) : null}
       <nav className={layoutStyles.header}>
         <Link to="/">
           <div className={layoutStyles.logo}>
-            <Image />
+            <Logo />
           </div>
         </Link>
         <ul ref={inputEl} className={className}>
@@ -63,7 +70,14 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      {shouldShowHeaderContent ? <HeaderContent /> : null}
+      {shouldShowHeaderContent ? (
+        <HeaderContent
+          headerTitle={headerTitle}
+          headerButtonText={headerButtonText}
+          headerURL={headerURL}
+          shouldShowHeaderButton={shouldShowHeaderButton}
+        />
+      ) : null}
     </div>
   )
 }

@@ -1,13 +1,11 @@
 import React from "react"
+import Layout from "../layout/Layout"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Header from "../components/navbar"
-import Footer from "../components/Footer"
 import "normalize.css"
 import styles from "../styles/blog.module.scss"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
-import { Helmet } from "react-helmet"
 import Share from "../components/Share"
 
 export const query = graphql`
@@ -40,23 +38,16 @@ const Blog = props => {
   }
 
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{props.data.contentfulBlog.title}</title>
-        <link
-          rel="canonical"
-          href={`https://teampoker.com/blog/${props.data.contentfulBlog.slug.replace(
-            /\s/g,
-            "-"
-          )}`}
-        />
-      </Helmet>
+    <Layout shouldShowHeaderButton={false} shouldShowHeaderContent={false}>
       <SEO
         title={props.data.contentfulBlog.title}
+        link={`https://teampoker.com/blog/${props.data.contentfulBlog.slug.replace(
+          /\s/g,
+          "-"
+        )}`}
         description="TeamPoker® Official Blog"
       />
-      <Header />
+
       <div className={styles.blogContainer}>
         <h1>{props.data.contentfulBlog.title}</h1>
         {props.data.contentfulBlog.cover && (
@@ -90,8 +81,7 @@ const Blog = props => {
         }}
         tags={["teampoker", "poker", "casino", "pokerteam", "teampoker"]}
       />
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
@@ -6,47 +6,25 @@ import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.scss"
 
-export const LayoutContext = React.createContext()
-
-const initialState = {
-  headerTitle: "",
-  headerButtonText: "",
-  headerURL: "",
-  shouldShowHeaderButton: false,
-  shouldShowHeaderContent: true,
-}
-
 const Layout = ({
   headerTitle,
   headerButtonText,
   headerURL,
+  headerImages,
   shouldShowHeaderContent,
   shouldShowHeaderButton,
   children,
 }) => {
-  const [headerProps, setHeaderProps] = useState(initialState)
-
-  useEffect(() => {
-    setHeaderProps({
-      headerTitle,
-      headerButtonText,
-      headerURL,
-      shouldShowHeaderButton,
-      shouldShowHeaderContent,
-    })
-  }, [
-    headerTitle,
-    headerButtonText,
-    headerURL,
-    shouldShowHeaderButton,
-    shouldShowHeaderContent,
-  ])
-
   return (
     <div>
-      <LayoutContext.Provider value={headerProps}>
-        <Header />
-      </LayoutContext.Provider>
+      <Header
+        headerTitle={headerTitle}
+        headerButtonText={headerButtonText}
+        headerURL={headerURL}
+        headerImages={headerImages}
+        shouldShowHeaderContent={shouldShowHeaderContent}
+        shouldShowHeaderButton={shouldShowHeaderButton}
+      />
       {children}
       <Footer />
     </div>
