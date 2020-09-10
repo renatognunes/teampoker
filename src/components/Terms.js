@@ -1,5 +1,5 @@
 import React from "react"
-import termsStyles from "./terms.module.scss"
+import termsStyles from "../styles/terms.module.scss"
 
 const Terms = () => (
   <div>

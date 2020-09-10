@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import ContactStyles from "./ContactPage.module.scss"
+import ContactStyles from "../styles/ContactPage.module.scss"
 import axios from "axios"
 import { useForm } from "react-hook-form"
 

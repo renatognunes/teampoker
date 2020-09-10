@@ -9,7 +9,7 @@ import {
   RedditShareButton,
 } from "react-share"
 
-import "./Share.scss"
+import "../styles/Share.scss"
 
 const Share = ({ socialConfig, tags }) => {
   let title = socialConfig.config.title

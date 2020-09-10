@@ -1,5 +1,5 @@
 import React, { useMemo } from "react"
-import layoutStyles from "./layout.module.scss"
+import layoutStyles from "../styles/layout.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundSlider from "gatsby-image-background-slider"
 

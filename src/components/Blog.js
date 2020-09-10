@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import BlogStyles from "../components/BlogPage.module.scss"
+import BlogStyles from "../styles/BlogPage.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Blog = () => {

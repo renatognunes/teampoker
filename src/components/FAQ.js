@@ -1,5 +1,5 @@
 import React from "react"
-import faqStyles from "./faq.module.scss"
+import faqStyles from "../styles/faq.module.scss"
 
 const FAQ = () => (
   <div>

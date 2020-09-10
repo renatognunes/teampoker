@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import AboutStyles from "../About.module.scss"
+import AboutStyles from "../../styles/About.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCertificate,

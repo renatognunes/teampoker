@@ -1,5 +1,5 @@
 import React from "react"
-import propertyStyles from "./Property.module.scss"
+import propertyStyles from "../styles/Property.module.scss"
 
 const IntellectualProperty = () => (
   <div>

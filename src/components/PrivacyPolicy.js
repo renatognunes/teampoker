@@ -1,5 +1,5 @@
 import React from "react"
-import privacyStyles from "./Privacy.module.scss"
+import privacyStyles from "../styles/Privacy.module.scss"
 
 const PrivacyPolicy = () => (
   <div>

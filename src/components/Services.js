@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import ServicesStyles from "./ServicesPage.module.scss"
+import ServicesStyles from "../styles/ServicesPage.module.scss"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 

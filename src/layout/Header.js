@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import layoutStyles from "../components/layout.module.scss"
+import layoutStyles from "../styles/layout.module.scss"
 import classNames from "classnames"
 import HeaderContent from "../components/HeaderContent"
 import Logo from "../components/Logo"

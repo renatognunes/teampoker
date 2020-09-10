@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import FooterStyles from "../components/footer.module.scss"
+import FooterStyles from "../styles/footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faInstagramSquare,

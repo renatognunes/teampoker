@@ -1,5 +1,5 @@
 import React from "react"
-import GalleryStyles from "./GalleryPage.module.scss"
+import GalleryStyles from "../styles/GalleryPage.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import classNames from "classnames"
 
