@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import AboutStyles from "../components/AboutPage.module.scss"
-import Header from "../components/sub-pages-header"
+import Layout from "../layout/Layout"
 import Img from "gatsby-image"
 import classNames from "classnames"
 import { graphql, useStaticQuery } from "gatsby"
-import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
 import SEO from "../components/SEO"
@@ -40,18 +39,16 @@ const About = props => {
   `)
 
   return (
-    <>
+    <Layout
+      headerTitle="ABOUT US"
+      image="about-bg.jpg"
+      shouldShowHeaderButton={false}
+      shouldShowHeaderContent
+    >
       <SEO
         title="About"
         link="https://teampoker.com/about"
         description="TeamPoker® is “The Patented Card Game Process” for the Tournament Poker Team Sports Model."
-      />
-      <Header
-        buttonText=""
-        image="about-bg.jpg"
-        text={<span>ABOUT US</span>}
-        hideButton={true}
-        padding={0}
       />
       <div className={AboutStyles.wrapper}>
         <div className={AboutStyles.title}>
@@ -251,8 +248,7 @@ const About = props => {
           </Link>
         </div>
       </div>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
