@@ -7,8 +7,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 const Partners = props => {
   const data = useStaticQuery(graphql`
@@ -39,13 +38,9 @@ const Partners = props => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Partners</title>
-        <link rel="canonical" href="https://teampoker.com/partners" />
-      </Helmet>
       <SEO
         title="Partners"
+        link="https://teampoker.com/partners"
         description="Become a Team Poker® Partner and join the Poker Sports Model where both Individuals and Teams compete for cash, glory and fame!"
       />
       <Header

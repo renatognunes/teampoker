@@ -8,8 +8,7 @@ import Footer from "../components/Footer"
 import "normalize.css"
 import classNames from "classnames"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 const Gallery = props => {
   const [isModalOpen, changeModal] = React.useState(false)
@@ -44,12 +43,11 @@ const Gallery = props => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Gallery</title>
-        <link rel="canonical" href="https://teampoker.com/gallery" />
-      </Helmet>
-      <SEO title="Gallery" description="TeamPoker® event's Gallery" />
+      <SEO
+        title="Gallery"
+        link="https://teampoker.com/gallery"
+        description="TeamPoker® event's Gallery"
+      />
       <Header
         image="gallery-bg.jpg"
         text={<span>GALLERY</span>}

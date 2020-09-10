@@ -8,8 +8,7 @@ import Footer from "../components/Footer"
 import "normalize.css"
 import classNames from "classnames"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 const Blog = props => {
   const data = useStaticQuery(graphql`
@@ -28,12 +27,11 @@ const Blog = props => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Blog</title>
-        <link rel="canonical" href="https://teampoker.com/blog" />
-      </Helmet>
-      <SEO title="Blog" description="TeamPoker® Official Blog" />
+      <SEO
+        title="Blog"
+        link="https://teampoker.com/blog"
+        description="TeamPoker® Official Blog"
+      />
       <Header
         image="blog-bg.jpg"
         text={<span>LATEST POKER NEWS</span>}

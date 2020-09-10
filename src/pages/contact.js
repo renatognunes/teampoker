@@ -11,8 +11,7 @@ import classNames from "classnames"
 import "../styles/global.scss"
 import axios from "axios"
 import { useForm } from "react-hook-form"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 toast.configure()
 const Contact = props => {
@@ -64,13 +63,9 @@ const Contact = props => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact</title>
-        <link rel="canonical" href="https://teampoker.com/contact" />
-      </Helmet>
       <SEO
         title="Contact"
+        link="https://teampoker.com/contact"
         description="Contact us for licenses, partnerships and live poker room software systems."
       />
       <ToastContainer

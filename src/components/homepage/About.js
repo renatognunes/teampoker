@@ -1,7 +1,6 @@
 import React from "react"
-import Img from "gatsby-image"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import AboutStyles from "./About.module.scss"
+import { Link } from "gatsby"
+import AboutStyles from "../About.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCertificate,
@@ -10,18 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: { eq: "blue-chip.png" }) {
-        childImageSharp {
-          fixed(width: 500) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <div className={AboutStyles.wrapper}>
       <div className={AboutStyles.content}>

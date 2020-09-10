@@ -1,29 +1,26 @@
 import React from "react"
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 import Header from "./header"
-import Services from "./Services"
-import About from "./About"
-import Clients from "./Clients"
 import Footer from "./Footer"
 import "normalize.css"
 import "../styles/global.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ headerTitle, headerButton, headerURL, children }) => {
   return (
-    <>
-      <Header
-        text="WE MAKE POKER A TEAM SPORT"
-        buttonText="How It Works"
-        url="/about"
-      />
-      <Services />
-      <About />
-      <Clients />
+    <div>
+      <Header text={headerTitle} buttonText={headerButton} url={headerURL} />
+      {children}
       <Footer />
-    </>
+    </div>
   )
 }
 
 export default Layout
+
+Layout.propTypes = {
+  headerTitle: PropTypes.string,
+  headerButton: PropTypes.string,
+  headerURL: PropTypes.string,
+  children: PropTypes.any.isRequired,
+}

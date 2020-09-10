@@ -7,7 +7,7 @@ const content = props => {
     <div className={contentStyles.container}>
       <div>
         <div className={contentStyles.headline}>
-          <h1 style={{ paddingBottom: props.paddingHeader }}>{props.text}</h1>
+          <h1>{props.text}</h1>
           {!props.hideButton && (
             <Link to={props.url}>
               <button className={contentStyles.button}>

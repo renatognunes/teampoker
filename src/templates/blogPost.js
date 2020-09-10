@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import "normalize.css"
 import styles from "../styles/blog.module.scss"
 import Img from "gatsby-image"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { Helmet } from "react-helmet"
 import Share from "../components/Share"
 

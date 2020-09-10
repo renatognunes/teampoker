@@ -5,8 +5,7 @@ import Header from "../components/navbar"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 // import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -17,12 +16,12 @@ library.add(fab, faCheckSquare, faCoffee)
 
 const Terms = () => (
   <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Terms & Conditions</title>
-      <link rel="canonical" href="https://teampoker.com/terms" />
-    </Helmet>
-    <SEO title="Terms & Conditions" terms="Terms and Conditions" />
+    <SEO
+      title="Terms & Conditions"
+      link="https://teampoker.com/terms"
+      terms="Terms and Conditions"
+    />
+
     <Header />
     <div className={termsStyles.header}>
       <h1>Terms & Conditions</h1>

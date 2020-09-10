@@ -7,8 +7,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 // import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -46,13 +45,9 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Services</title>
-        <link rel="canonical" href="https://teampoker.com/services" />
-      </Helmet>
       <SEO
         title="Services"
+        link="https://teampoker.com/services"
         description="TeamPoker® provides Live Poker Room Software, Online Poker Rooms, and Championship licenses."
       />
       <Header

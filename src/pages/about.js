@@ -8,8 +8,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "../components/Footer"
 import "normalize.css"
 import "../styles/global.scss"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import SEO from "../components/SEO"
 
 const About = props => {
   let className = classNames(AboutStyles.overlay, AboutStyles.color1)
@@ -42,13 +41,9 @@ const About = props => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>About</title>
-        <link rel="canonical" href="https://teampoker.com/about" />
-      </Helmet>
       <SEO
         title="About"
+        link="https://teampoker.com/about"
         description="TeamPoker® is “The Patented Card Game Process” for the Tournament Poker Team Sports Model."
       />
       <Header

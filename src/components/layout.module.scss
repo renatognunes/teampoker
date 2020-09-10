@@ -131,6 +131,10 @@ html {
   transform: rotate(225deg);
 }
 
+.navbar__darkmode {
+  background-color: #323232;
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;

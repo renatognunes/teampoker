@@ -1,12 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../layout/Layout"
+import SEO from "../components/SEO"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import { Helmet } from "react-helmet"
+import Services from "../components/homepage/Services"
+import About from "../components/homepage/About"
+import Clients from "../components/homepage/Clients"
 
-// import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
@@ -14,18 +13,22 @@ import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 library.add(fab, faCheckSquare, faCoffee)
 
 const IndexPage = () => (
-  <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>TeamPoker®</title>
-      <link rel="canonical" href="https://teampoker.com" />
-    </Helmet>
+  <Layout
+    headerTitle="WE MAKE POKER A TEAM SPORT"
+    headerButtonText="How It Works"
+    headerURL="/about"
+    shouldShowHeaderButton
+    shouldShowHeaderContent
+  >
     <SEO
       title="TeamPoker®"
+      link="https://teampoker.com"
       description="TeamPoker® is “The Patented Card Game Process” for the Tournament Poker Team Sports Model."
     />
-    <Layout />
-  </>
+    <Services />
+    <About />
+    <Clients />
+  </Layout>
 )
 
 export default IndexPage
