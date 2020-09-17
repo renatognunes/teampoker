@@ -35,7 +35,7 @@ const About = () => {
   return (
     <div className={AboutStyles.wrapper}>
       <div className={AboutStyles.title}>
-        <h1>We're TeamPoker®</h1>
+        <h1>We're Team Poker®</h1>
       </div>
       <div className={AboutStyles.headlinetop}>
         <p>

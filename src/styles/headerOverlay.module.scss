@@ -1,0 +1,20 @@
+@import "global.scss";
+
+.backgroundWrapper {
+  background: #29292993;
+  transition: none !important;
+  z-index: 0;
+  position: absolute;
+  height: 550px;
+  width: 100%;
+}
+
+.backgroundWrapperBack {
+  background: linear-gradient(340deg, #131f30 0%, #131a25 74%);
+  transition: none !important;
+  opacity: 1;
+  z-index: -2;
+  position: absolute;
+  height: 550px;
+  width: 100%;
+}

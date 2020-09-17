@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
 import React from "react"
-import layoutStyles from "../styles/layout.module.scss"
+import styles from "../styles/header.module.scss"
+import { Link } from "gatsby"
 import classNames from "classnames"
-import HeaderContent from "../components/HeaderContent"
 import Logo from "../components/Logo"
+import HeaderContent from "../components/HeaderContent"
 import HeaderOverlay from "../components/HeaderOverlay"
 
 const Header = ({
@@ -18,22 +18,22 @@ const Header = ({
 
   const inputEl = React.useRef(null)
 
-  let className = classNames(layoutStyles.navBar, {
-    [layoutStyles.navBarActive]: isNavbarOpen,
+  let className = classNames(styles.navBar, {
+    [styles.navBarActive]: isNavbarOpen,
   })
 
   return (
     <div
-      className={classNames(layoutStyles.headerWrapper, {
-        [layoutStyles["navbar__darkmode"]]: !shouldShowHeaderContent,
-      })}
+      className={
+        !shouldShowHeaderContent ? styles["navbar__darkmode"] : undefined
+      }
     >
       {shouldShowHeaderContent ? (
         <HeaderOverlay headerImages={headerImages} />
       ) : null}
-      <nav className={layoutStyles.header}>
+      <nav className={styles.header}>
         <Link to="/">
-          <div className={layoutStyles.logo}>
+          <div className={styles.logo}>
             <Logo />
           </div>
         </Link>
@@ -62,10 +62,10 @@ const Header = ({
           onClick={() => changeNavbar(!isNavbarOpen)}
           onKeyDown={() => changeNavbar(!isNavbarOpen)}
           tabIndex={0}
-          className={layoutStyles.burgerContainer}
+          className={styles.burgerContainer}
         >
-          <input type="checkbox" className={layoutStyles.toggler} />
-          <div className={layoutStyles.burger}>
+          <input type="checkbox" className={styles.toggler} />
+          <div className={styles.burger}>
             <div></div>
           </div>
         </div>

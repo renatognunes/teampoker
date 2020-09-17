@@ -1,0 +1,158 @@
+@import "global.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: relative;
+  padding: 2rem 3.6rem;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.header .logo {
+  display: block;
+  width: 240px;
+}
+
+.header .nav-bar {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.nav-bar a {
+  display: block;
+  padding-left: 3rem;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .burgerContainer {
+  position: relative;
+  display: none;
+}
+
+.header .toggler {
+  position: absolute;
+  top: 0.3rem;
+  right: 0rem;
+  z-index: 2;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+}
+
+.header .burger {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header .burger > div {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-out;
+}
+
+// Top and bottom line
+.header .burger > div:before,
+.header .burger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: inherit;
+}
+
+// Moves line down
+.header .burger > div:after {
+  top: 10px;
+}
+
+// Toggler animate
+.header .toggler:checked + .burger > div {
+  transform: rotate(135deg);
+}
+
+// Turns lines into X
+.header .toggler:checked + .burger > div:before,
+.header .toggler:checked + .burger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+// Rotate on hover
+.header .toggler:checked:hover + .burger > div {
+  transform: rotate(225deg);
+}
+
+.navbar__darkmode {
+  background-color: #323232;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 2rem 1.8rem;
+  }
+
+  .header .logo {
+    width: 220px;
+  }
+  .nav-bar {
+    z-index: 2;
+    position: fixed;
+    right: 0px;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba($color: #12100e, $alpha: 0.96);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4.4rem 0rem 6rem 0rem;
+    padding-top: 10rem;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-bar li {
+    opacity: 1;
+  }
+  .nav-bar a {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .header .burgerContainer {
+    display: block;
+    z-index: 3;
+  }
+}
+
+.nav-bar-active {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-background {
+  background-color: rgba($color: #12100e, $alpha: 0.96);
+}

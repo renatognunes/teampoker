@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import FooterStyles from "../styles/footer.module.scss"
+import styles from "../styles/footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faInstagramSquare,
@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <div className={FooterStyles.wrapper}>
-      <div className={FooterStyles.content}>
-        <div className={FooterStyles.links}>
+    <div className={styles.wrapper}>
+      <div className={styles.content}>
+        <div className={styles.links}>
           <h2>Links</h2>
-          <div className={FooterStyles.tags}>
+          <div className={styles.tags}>
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/terms">Terms</Link>
@@ -25,17 +25,17 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={FooterStyles.contact}>
+        <div className={styles.contact}>
           <h2>Contact us</h2>
-          <div className={FooterStyles.emails}>
+          <div className={styles.emails}>
             <span>info@teampoker.com</span>
             <span>Phone: (970) 290-3936</span>
           </div>
         </div>
-        <div className={FooterStyles.copyright}>
+        <div className={styles.copyright}>
           <h2>Follow us</h2>
           <div>
-            <div className={FooterStyles.icons}>
+            <div className={styles.icons}>
               <a href="https://www.facebook.com/PlayTeamPoker" target="_blank">
                 <FontAwesomeIcon
                   size="2x"
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={FooterStyles.footer}>
+      <div className={styles.footer}>
         <span>TeamPoker®</span>
         <span>Patent 7819735 Oct 2010</span>
         <span>© 1999-2020 All Rights Reserved.</span>

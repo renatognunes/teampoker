@@ -14,14 +14,23 @@ const About = () => {
       <div className={AboutStyles.content}>
         <div className={AboutStyles.aboutWrapper}>
           <div className={AboutStyles.about}>
-            <h1>We're TeamPoker®</h1>
+            <h1>Try us for FREE!</h1>
+            <p>Team Poker® is FREE for small clubs, and charities!</p>
             <p>
-              TeamPoker® is <i>“The Patented Card Game Process” </i>for the
-              Tournament Poker Team Sports Model.
+              <i>
+                The Most Professional Poker Room Software on the Market Now with
+                Team Poker®
+              </i>
             </p>
             <span className={AboutStyles.headline}>
               Start a Team and Own the Club!
             </span>
+            <a
+              href="https://casinoware.com/quick-start/free-download"
+              target="_blank"
+            >
+              <button className={AboutStyles.button}>Download for FREE</button>
+            </a>
           </div>
         </div>
         <div className={AboutStyles.textWrapper}>

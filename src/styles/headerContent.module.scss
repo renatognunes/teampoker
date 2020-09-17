@@ -1,3 +1,5 @@
+@import "global.scss";
+
 .container {
   display: flex;
   height: 476px;
@@ -30,30 +32,6 @@
   padding-bottom: 4px;
 }
 
-.headline p {
-  display: inline-block;
-  padding: 0 2rem;
-  font-family: "Roboto", sans-serif;
-  text-align: left;
-  text-shadow: 0px 0px 2px black;
-  color: white;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-}
-
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #00c6ff 0%,
-    #0072ff 51%,
-    #00c6ff 100%
-  );
-}
-.btn-grad:hover {
-  background-position: right center;
-}
-
 .button {
   margin-top: 30px;
   padding: 15px 20px;
@@ -71,6 +49,12 @@
     background-position: right;
     border: 1px solid #9cebfd;
     box-shadow: 0px 0px 10px #ffffff48;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    margin-top: 40px;
   }
 }
 
@@ -100,8 +84,5 @@
     font-weight: 600;
     margin-bottom: 0;
     padding-bottom: 4px;
-  }
-  .button {
-    margin-top: 40px;
   }
 }

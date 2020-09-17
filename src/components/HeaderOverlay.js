@@ -1,5 +1,5 @@
 import React, { useMemo } from "react"
-import layoutStyles from "../styles/layout.module.scss"
+import styles from "../styles/headerOverlay.module.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundSlider from "gatsby-image-background-slider"
 
@@ -10,8 +10,8 @@ function HeaderOverlay({ headerImages }) {
 
   return (
     <div>
-      <div className={layoutStyles.backgroundWrapperBack} />
-      <div className={layoutStyles.backgroundWrapper} />
+      <div className={styles.backgroundWrapperBack} />
+      <div className={styles.backgroundWrapper} />
       <BackgroundSlider
         query={useStaticQuery(graphql`
           query {

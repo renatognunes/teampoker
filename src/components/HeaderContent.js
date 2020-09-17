@@ -1,5 +1,5 @@
 import React from "react"
-import contentStyles from "../styles/content.module.scss"
+import styles from "../styles/headerContent.module.scss"
 import { Link } from "gatsby"
 
 const HeaderContent = ({
@@ -9,15 +9,13 @@ const HeaderContent = ({
   shouldShowHeaderButton,
 }) => {
   return (
-    <div className={contentStyles.container}>
+    <div className={styles.container}>
       <div>
-        <div className={contentStyles.headline}>
+        <div className={styles.headline}>
           <h1>{headerTitle}</h1>
           {shouldShowHeaderButton ? (
             <Link to={headerURL}>
-              <button className={contentStyles.button}>
-                {headerButtonText}
-              </button>
+              <button className={styles.button}>{headerButtonText}</button>
             </Link>
           ) : null}
         </div>

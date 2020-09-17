@@ -34,7 +34,7 @@ const Services = () => {
     <div className={ServicesStyles.wrapper}>
       <div className={ServicesStyles.content}>
         <div className={ServicesStyles.header}>
-          <h1>Market Initiatives</h1>
+          <h1>We're Team Poker®</h1>
         </div>
         <div className={ServicesStyles.container}>
           <div>

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../layout/Layout"
 import SEO from "../components/seo"
 
+import Calendar from "../components/homepage/Calendar"
 import Services from "../components/homepage/Services"
 import About from "../components/homepage/About"
 import Clients from "../components/homepage/Clients"
@@ -12,7 +13,7 @@ import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 library.add(fab, faCheckSquare, faCoffee)
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout
     headerTitle="WE MAKE POKER A TEAM SPORT"
     headerButtonText="How It Works"
@@ -28,6 +29,7 @@ const IndexPage = () => (
     />
     <Services />
     <About />
+    <Calendar />
     <Clients />
   </Layout>
 )
