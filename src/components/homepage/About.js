@@ -17,7 +17,7 @@ const About = () => {
             <h1>Try us for FREE!</h1>
             <p>
               TeamPoker® CasinoWare is FREE for up to 100 PLAYERS and 3 TABLES
-              and Charities.
+              and CHARITIES.
             </p>
             <p>
               <i>
