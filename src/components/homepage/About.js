@@ -15,7 +15,10 @@ const About = () => {
         <div className={AboutStyles.aboutWrapper}>
           <div className={AboutStyles.about}>
             <h1>Try us for FREE!</h1>
-            <p>Team Poker® is FREE for small clubs, and charities!</p>
+            <p>
+              TeamPoker® CasinoWare is FREE for up to 100 PLAYERS and 3 TABLES
+              and Charities.
+            </p>
             <p>
               <i>
                 The Most Professional Poker Room Software on the Market Now with
